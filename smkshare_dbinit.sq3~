@@ -1,0 +1,20 @@
+create table accounts (
+id char(20) primary key,
+salt varchar(40),
+hashed varchar(40),
+algo char(5)
+);
+
+create table smkfiles (
+id integer primary key,
+auther char(20),
+name varchar(128),
+filename varchar(64)
+);
+
+create table dllogs (
+id integer primary key,
+userid char(20),
+fileid integer,
+date varchar(24)
+);

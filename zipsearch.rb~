@@ -1,0 +1,7 @@
+require 'sinatra'
+require 'json'
+require 'active_record'
+
+set :environment :development
+
+ActiveRecord::Base.configgurations = YZML.load_file('database.yml')

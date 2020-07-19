@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8" />
+    <title>RegistShare</title>
+  </head>	
+
+  <body>
+    <Div align="right">
+      <a href="/">Mainpage</a> | <a href="/logout">Log out</a> | <a href="/upload">File Upload</a>
+
+    </Div>
+    <Div align="center">
+      <h1>Search:<%= @str %></h1><br>
+      <form method="post" action="/search">
+        <input type="text" name="str">
+        <input type="submit" name="search" value="search">
+      </form>
+      <table border>
+        <tr>
+          <td>Filename</td>
+          <td>Auther</td>
+          <td>DL</td>
+        </tr>
+        <% @image.each do |b| %>
+        <tr>
+          <td><%= b.name %></td>
+          <td><%= b.auther %></td>
+          <form method="post" action="/download">
+	    <td><input type="hidden" name="fileid" value="<%= b.id %>">
+	      <input type="submit" name="download" value="download"></td>       
+	    </form>
+	</tr>
+        <% end %>
+      </table>
+
+    </Div>
+  </body>
+</html>

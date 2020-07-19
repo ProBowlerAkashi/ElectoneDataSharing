@@ -1,0 +1,1982 @@
+.
+├── Gemfile
+├── Gemfile.lock
+├── Gemfile~
+├── database.yml
+├── database.yml~
+├── output.txt
+├── public
+│   └── files
+│       ├── DATA6
+│       │   ├── ELS_SONG.NAM
+│       │   └── SONG_001
+│       │       └── REG_001.B00
+│       ├── DL_DATA6.zip
+│       ├── DL_DUMMY2.zip
+│       ├── DL_DUMMY4.zip
+│       ├── DL_DUMMY_DATA1.zip
+│       ├── DL_DUMMY_DATA_7.zip
+│       ├── DL_\343\203\200\343\203\237\343\203\274\357\274\223.zip
+│       ├── DL_\343\203\237\343\202\271\343\203\207\343\203\274\343\202\277.zip
+│       ├── DUMMY2
+│       │   ├── ELS_SONG.NAM
+│       │   └── SONG_001
+│       │       └── REG_001.B00
+│       ├── DUMMY4
+│       │   ├── ELS_SONG.NAM
+│       │   └── SONG_001
+│       │       └── REG_001.B00
+│       ├── DUMMY_DATA1
+│       │   ├── ELS_SONG.NAM
+│       │   └── SONG_001
+│       │       └── REG_001.B00
+│       ├── DUMMY_DATA_7
+│       │   ├── ELS_SONG.NAM
+│       │   └── SONG_001
+│       │       └── REG_001.B00
+│       ├── \343\203\200\343\203\237\343\203\274\357\274\223
+│       │   ├── ELS_SONG.NAM
+│       │   └── SONG_001
+│       │       └── REG_001.B00
+│       └── \343\203\237\343\202\271\343\203\207\343\203\274\343\202\277
+│           ├── REG_001.B00
+│           └── SONG_001
+│               └── ELS_SONG.NAM
+├── smkshare.db
+├── smkshare.rb
+├── smkshare.rb~
+├── smkshare_dbinit.sq3
+├── smkshare_dbinit.sq3~
+├── test.rb
+├── test.rb~
+├── vendor
+│   └── bundle
+│       └── ruby
+│           └── 2.4.0
+│               ├── bin
+│               │   ├── rackup
+│               │   └── tilt
+│               ├── build_info
+│               ├── cache
+│               │   ├── activemodel-5.1.4.gem
+│               │   ├── activerecord-5.1.4.gem
+│               │   ├── activesupport-5.1.4.gem
+│               │   ├── arel-8.0.0.gem
+│               │   ├── concurrent-ruby-1.0.5.gem
+│               │   ├── i18n-0.9.3.gem
+│               │   ├── minitest-5.11.1.gem
+│               │   ├── mustermann-1.0.1.gem
+│               │   ├── rack-2.0.3.gem
+│               │   ├── rack-protection-2.0.0.gem
+│               │   ├── rubyzip-1.2.1.gem
+│               │   ├── sinatra-2.0.0.gem
+│               │   ├── sqlite3-1.3.13.gem
+│               │   ├── thread_safe-0.3.6.gem
+│               │   ├── tilt-2.0.8.gem
+│               │   └── tzinfo-1.2.4.gem
+│               ├── doc
+│               ├── extensions
+│               │   └── x86_64-linux
+│               │       └── 2.4.0-static
+│               │           └── sqlite3-1.3.13
+│               │               ├── gem.build_complete
+│               │               ├── gem_make.out
+│               │               ├── mkmf.log
+│               │               └── sqlite3
+│               │                   └── sqlite3_native.so
+│               ├── gems
+│               │   ├── activemodel-5.1.4
+│               │   │   ├── CHANGELOG.md
+│               │   │   ├── MIT-LICENSE
+│               │   │   ├── README.rdoc
+│               │   │   └── lib
+│               │   │       ├── active_model
+│               │   │       │   ├── attribute_assignment.rb
+│               │   │       │   ├── attribute_methods.rb
+│               │   │       │   ├── callbacks.rb
+│               │   │       │   ├── conversion.rb
+│               │   │       │   ├── dirty.rb
+│               │   │       │   ├── errors.rb
+│               │   │       │   ├── forbidden_attributes_protection.rb
+│               │   │       │   ├── gem_version.rb
+│               │   │       │   ├── lint.rb
+│               │   │       │   ├── locale
+│               │   │       │   │   └── en.yml
+│               │   │       │   ├── model.rb
+│               │   │       │   ├── naming.rb
+│               │   │       │   ├── railtie.rb
+│               │   │       │   ├── secure_password.rb
+│               │   │       │   ├── serialization.rb
+│               │   │       │   ├── serializers
+│               │   │       │   │   └── json.rb
+│               │   │       │   ├── translation.rb
+│               │   │       │   ├── type
+│               │   │       │   │   ├── big_integer.rb
+│               │   │       │   │   ├── binary.rb
+│               │   │       │   │   ├── boolean.rb
+│               │   │       │   │   ├── date.rb
+│               │   │       │   │   ├── date_time.rb
+│               │   │       │   │   ├── decimal.rb
+│               │   │       │   │   ├── float.rb
+│               │   │       │   │   ├── helpers
+│               │   │       │   │   │   ├── accepts_multiparameter_time.rb
+│               │   │       │   │   │   ├── mutable.rb
+│               │   │       │   │   │   ├── numeric.rb
+│               │   │       │   │   │   └── time_value.rb
+│               │   │       │   │   ├── helpers.rb
+│               │   │       │   │   ├── immutable_string.rb
+│               │   │       │   │   ├── integer.rb
+│               │   │       │   │   ├── registry.rb
+│               │   │       │   │   ├── string.rb
+│               │   │       │   │   ├── time.rb
+│               │   │       │   │   └── value.rb
+│               │   │       │   ├── type.rb
+│               │   │       │   ├── validations
+│               │   │       │   │   ├── absence.rb
+│               │   │       │   │   ├── acceptance.rb
+│               │   │       │   │   ├── callbacks.rb
+│               │   │       │   │   ├── clusivity.rb
+│               │   │       │   │   ├── confirmation.rb
+│               │   │       │   │   ├── exclusion.rb
+│               │   │       │   │   ├── format.rb
+│               │   │       │   │   ├── helper_methods.rb
+│               │   │       │   │   ├── inclusion.rb
+│               │   │       │   │   ├── length.rb
+│               │   │       │   │   ├── numericality.rb
+│               │   │       │   │   ├── presence.rb
+│               │   │       │   │   ├── validates.rb
+│               │   │       │   │   └── with.rb
+│               │   │       │   ├── validations.rb
+│               │   │       │   ├── validator.rb
+│               │   │       │   └── version.rb
+│               │   │       └── active_model.rb
+│               │   ├── activerecord-5.1.4
+│               │   │   ├── CHANGELOG.md
+│               │   │   ├── MIT-LICENSE
+│               │   │   ├── README.rdoc
+│               │   │   ├── examples
+│               │   │   │   ├── performance.rb
+│               │   │   │   └── simple.rb
+│               │   │   └── lib
+│               │   │       ├── active_record
+│               │   │       │   ├── aggregations.rb
+│               │   │       │   ├── association_relation.rb
+│               │   │       │   ├── associations
+│               │   │       │   │   ├── alias_tracker.rb
+│               │   │       │   │   ├── association.rb
+│               │   │       │   │   ├── association_scope.rb
+│               │   │       │   │   ├── belongs_to_association.rb
+│               │   │       │   │   ├── belongs_to_polymorphic_association.rb
+│               │   │       │   │   ├── builder
+│               │   │       │   │   │   ├── association.rb
+│               │   │       │   │   │   ├── belongs_to.rb
+│               │   │       │   │   │   ├── collection_association.rb
+│               │   │       │   │   │   ├── has_and_belongs_to_many.rb
+│               │   │       │   │   │   ├── has_many.rb
+│               │   │       │   │   │   ├── has_one.rb
+│               │   │       │   │   │   └── singular_association.rb
+│               │   │       │   │   ├── collection_association.rb
+│               │   │       │   │   ├── collection_proxy.rb
+│               │   │       │   │   ├── foreign_association.rb
+│               │   │       │   │   ├── has_many_association.rb
+│               │   │       │   │   ├── has_many_through_association.rb
+│               │   │       │   │   ├── has_one_association.rb
+│               │   │       │   │   ├── has_one_through_association.rb
+│               │   │       │   │   ├── join_dependency
+│               │   │       │   │   │   ├── join_association.rb
+│               │   │       │   │   │   ├── join_base.rb
+│               │   │       │   │   │   └── join_part.rb
+│               │   │       │   │   ├── join_dependency.rb
+│               │   │       │   │   ├── preloader
+│               │   │       │   │   │   ├── association.rb
+│               │   │       │   │   │   ├── belongs_to.rb
+│               │   │       │   │   │   ├── collection_association.rb
+│               │   │       │   │   │   ├── has_many.rb
+│               │   │       │   │   │   ├── has_many_through.rb
+│               │   │       │   │   │   ├── has_one.rb
+│               │   │       │   │   │   ├── has_one_through.rb
+│               │   │       │   │   │   ├── singular_association.rb
+│               │   │       │   │   │   └── through_association.rb
+│               │   │       │   │   ├── preloader.rb
+│               │   │       │   │   ├── singular_association.rb
+│               │   │       │   │   └── through_association.rb
+│               │   │       │   ├── associations.rb
+│               │   │       │   ├── attribute
+│               │   │       │   │   └── user_provided_default.rb
+│               │   │       │   ├── attribute.rb
+│               │   │       │   ├── attribute_assignment.rb
+│               │   │       │   ├── attribute_decorators.rb
+│               │   │       │   ├── attribute_methods
+│               │   │       │   │   ├── before_type_cast.rb
+│               │   │       │   │   ├── dirty.rb
+│               │   │       │   │   ├── primary_key.rb
+│               │   │       │   │   ├── query.rb
+│               │   │       │   │   ├── read.rb
+│               │   │       │   │   ├── serialization.rb
+│               │   │       │   │   ├── time_zone_conversion.rb
+│               │   │       │   │   └── write.rb
+│               │   │       │   ├── attribute_methods.rb
+│               │   │       │   ├── attribute_mutation_tracker.rb
+│               │   │       │   ├── attribute_set
+│               │   │       │   │   ├── builder.rb
+│               │   │       │   │   └── yaml_encoder.rb
+│               │   │       │   ├── attribute_set.rb
+│               │   │       │   ├── attributes.rb
+│               │   │       │   ├── autosave_association.rb
+│               │   │       │   ├── base.rb
+│               │   │       │   ├── callbacks.rb
+│               │   │       │   ├── coders
+│               │   │       │   │   ├── json.rb
+│               │   │       │   │   └── yaml_column.rb
+│               │   │       │   ├── collection_cache_key.rb
+│               │   │       │   ├── connection_adapters
+│               │   │       │   │   ├── abstract
+│               │   │       │   │   │   ├── connection_pool.rb
+│               │   │       │   │   │   ├── database_limits.rb
+│               │   │       │   │   │   ├── database_statements.rb
+│               │   │       │   │   │   ├── query_cache.rb
+│               │   │       │   │   │   ├── quoting.rb
+│               │   │       │   │   │   ├── savepoints.rb
+│               │   │       │   │   │   ├── schema_creation.rb
+│               │   │       │   │   │   ├── schema_definitions.rb
+│               │   │       │   │   │   ├── schema_dumper.rb
+│               │   │       │   │   │   ├── schema_statements.rb
+│               │   │       │   │   │   └── transaction.rb
+│               │   │       │   │   ├── abstract_adapter.rb
+│               │   │       │   │   ├── abstract_mysql_adapter.rb
+│               │   │       │   │   ├── column.rb
+│               │   │       │   │   ├── connection_specification.rb
+│               │   │       │   │   ├── determine_if_preparable_visitor.rb
+│               │   │       │   │   ├── mysql
+│               │   │       │   │   │   ├── column.rb
+│               │   │       │   │   │   ├── database_statements.rb
+│               │   │       │   │   │   ├── explain_pretty_printer.rb
+│               │   │       │   │   │   ├── quoting.rb
+│               │   │       │   │   │   ├── schema_creation.rb
+│               │   │       │   │   │   ├── schema_definitions.rb
+│               │   │       │   │   │   ├── schema_dumper.rb
+│               │   │       │   │   │   ├── schema_statements.rb
+│               │   │       │   │   │   └── type_metadata.rb
+│               │   │       │   │   ├── mysql2_adapter.rb
+│               │   │       │   │   ├── postgresql
+│               │   │       │   │   │   ├── column.rb
+│               │   │       │   │   │   ├── database_statements.rb
+│               │   │       │   │   │   ├── explain_pretty_printer.rb
+│               │   │       │   │   │   ├── oid
+│               │   │       │   │   │   │   ├── array.rb
+│               │   │       │   │   │   │   ├── bit.rb
+│               │   │       │   │   │   │   ├── bit_varying.rb
+│               │   │       │   │   │   │   ├── bytea.rb
+│               │   │       │   │   │   │   ├── cidr.rb
+│               │   │       │   │   │   │   ├── date_time.rb
+│               │   │       │   │   │   │   ├── decimal.rb
+│               │   │       │   │   │   │   ├── enum.rb
+│               │   │       │   │   │   │   ├── hstore.rb
+│               │   │       │   │   │   │   ├── inet.rb
+│               │   │       │   │   │   │   ├── json.rb
+│               │   │       │   │   │   │   ├── jsonb.rb
+│               │   │       │   │   │   │   ├── legacy_point.rb
+│               │   │       │   │   │   │   ├── money.rb
+│               │   │       │   │   │   │   ├── oid.rb
+│               │   │       │   │   │   │   ├── point.rb
+│               │   │       │   │   │   │   ├── range.rb
+│               │   │       │   │   │   │   ├── specialized_string.rb
+│               │   │       │   │   │   │   ├── type_map_initializer.rb
+│               │   │       │   │   │   │   ├── uuid.rb
+│               │   │       │   │   │   │   ├── vector.rb
+│               │   │       │   │   │   │   └── xml.rb
+│               │   │       │   │   │   ├── oid.rb
+│               │   │       │   │   │   ├── quoting.rb
+│               │   │       │   │   │   ├── referential_integrity.rb
+│               │   │       │   │   │   ├── schema_creation.rb
+│               │   │       │   │   │   ├── schema_definitions.rb
+│               │   │       │   │   │   ├── schema_dumper.rb
+│               │   │       │   │   │   ├── schema_statements.rb
+│               │   │       │   │   │   ├── type_metadata.rb
+│               │   │       │   │   │   └── utils.rb
+│               │   │       │   │   ├── postgresql_adapter.rb
+│               │   │       │   │   ├── schema_cache.rb
+│               │   │       │   │   ├── sql_type_metadata.rb
+│               │   │       │   │   ├── sqlite3
+│               │   │       │   │   │   ├── explain_pretty_printer.rb
+│               │   │       │   │   │   ├── quoting.rb
+│               │   │       │   │   │   ├── schema_creation.rb
+│               │   │       │   │   │   ├── schema_definitions.rb
+│               │   │       │   │   │   ├── schema_dumper.rb
+│               │   │       │   │   │   └── schema_statements.rb
+│               │   │       │   │   ├── sqlite3_adapter.rb
+│               │   │       │   │   └── statement_pool.rb
+│               │   │       │   ├── connection_handling.rb
+│               │   │       │   ├── core.rb
+│               │   │       │   ├── counter_cache.rb
+│               │   │       │   ├── define_callbacks.rb
+│               │   │       │   ├── dynamic_matchers.rb
+│               │   │       │   ├── enum.rb
+│               │   │       │   ├── errors.rb
+│               │   │       │   ├── explain.rb
+│               │   │       │   ├── explain_registry.rb
+│               │   │       │   ├── explain_subscriber.rb
+│               │   │       │   ├── fixture_set
+│               │   │       │   │   └── file.rb
+│               │   │       │   ├── fixtures.rb
+│               │   │       │   ├── gem_version.rb
+│               │   │       │   ├── inheritance.rb
+│               │   │       │   ├── integration.rb
+│               │   │       │   ├── internal_metadata.rb
+│               │   │       │   ├── legacy_yaml_adapter.rb
+│               │   │       │   ├── locale
+│               │   │       │   │   └── en.yml
+│               │   │       │   ├── locking
+│               │   │       │   │   ├── optimistic.rb
+│               │   │       │   │   └── pessimistic.rb
+│               │   │       │   ├── log_subscriber.rb
+│               │   │       │   ├── migration
+│               │   │       │   │   ├── command_recorder.rb
+│               │   │       │   │   ├── compatibility.rb
+│               │   │       │   │   └── join_table.rb
+│               │   │       │   ├── migration.rb
+│               │   │       │   ├── model_schema.rb
+│               │   │       │   ├── nested_attributes.rb
+│               │   │       │   ├── no_touching.rb
+│               │   │       │   ├── null_relation.rb
+│               │   │       │   ├── persistence.rb
+│               │   │       │   ├── query_cache.rb
+│               │   │       │   ├── querying.rb
+│               │   │       │   ├── railtie.rb
+│               │   │       │   ├── railties
+│               │   │       │   │   ├── console_sandbox.rb
+│               │   │       │   │   ├── controller_runtime.rb
+│               │   │       │   │   ├── databases.rake
+│               │   │       │   │   └── jdbcmysql_error.rb
+│               │   │       │   ├── readonly_attributes.rb
+│               │   │       │   ├── reflection.rb
+│               │   │       │   ├── relation
+│               │   │       │   │   ├── batches
+│               │   │       │   │   │   └── batch_enumerator.rb
+│               │   │       │   │   ├── batches.rb
+│               │   │       │   │   ├── calculations.rb
+│               │   │       │   │   ├── delegation.rb
+│               │   │       │   │   ├── finder_methods.rb
+│               │   │       │   │   ├── from_clause.rb
+│               │   │       │   │   ├── merger.rb
+│               │   │       │   │   ├── predicate_builder
+│               │   │       │   │   │   ├── array_handler.rb
+│               │   │       │   │   │   ├── association_query_handler.rb
+│               │   │       │   │   │   ├── base_handler.rb
+│               │   │       │   │   │   ├── basic_object_handler.rb
+│               │   │       │   │   │   ├── polymorphic_array_handler.rb
+│               │   │       │   │   │   ├── range_handler.rb
+│               │   │       │   │   │   └── relation_handler.rb
+│               │   │       │   │   ├── predicate_builder.rb
+│               │   │       │   │   ├── query_attribute.rb
+│               │   │       │   │   ├── query_methods.rb
+│               │   │       │   │   ├── record_fetch_warning.rb
+│               │   │       │   │   ├── spawn_methods.rb
+│               │   │       │   │   ├── where_clause.rb
+│               │   │       │   │   └── where_clause_factory.rb
+│               │   │       │   ├── relation.rb
+│               │   │       │   ├── result.rb
+│               │   │       │   ├── runtime_registry.rb
+│               │   │       │   ├── sanitization.rb
+│               │   │       │   ├── schema.rb
+│               │   │       │   ├── schema_dumper.rb
+│               │   │       │   ├── schema_migration.rb
+│               │   │       │   ├── scoping
+│               │   │       │   │   ├── default.rb
+│               │   │       │   │   └── named.rb
+│               │   │       │   ├── scoping.rb
+│               │   │       │   ├── secure_token.rb
+│               │   │       │   ├── serialization.rb
+│               │   │       │   ├── statement_cache.rb
+│               │   │       │   ├── store.rb
+│               │   │       │   ├── suppressor.rb
+│               │   │       │   ├── table_metadata.rb
+│               │   │       │   ├── tasks
+│               │   │       │   │   ├── database_tasks.rb
+│               │   │       │   │   ├── mysql_database_tasks.rb
+│               │   │       │   │   ├── postgresql_database_tasks.rb
+│               │   │       │   │   └── sqlite_database_tasks.rb
+│               │   │       │   ├── timestamp.rb
+│               │   │       │   ├── touch_later.rb
+│               │   │       │   ├── transactions.rb
+│               │   │       │   ├── translation.rb
+│               │   │       │   ├── type
+│               │   │       │   │   ├── adapter_specific_registry.rb
+│               │   │       │   │   ├── date.rb
+│               │   │       │   │   ├── date_time.rb
+│               │   │       │   │   ├── decimal_without_scale.rb
+│               │   │       │   │   ├── hash_lookup_type_map.rb
+│               │   │       │   │   ├── internal
+│               │   │       │   │   │   ├── abstract_json.rb
+│               │   │       │   │   │   └── timezone.rb
+│               │   │       │   │   ├── serialized.rb
+│               │   │       │   │   ├── text.rb
+│               │   │       │   │   ├── time.rb
+│               │   │       │   │   ├── type_map.rb
+│               │   │       │   │   └── unsigned_integer.rb
+│               │   │       │   ├── type.rb
+│               │   │       │   ├── type_caster
+│               │   │       │   │   ├── connection.rb
+│               │   │       │   │   └── map.rb
+│               │   │       │   ├── type_caster.rb
+│               │   │       │   ├── validations
+│               │   │       │   │   ├── absence.rb
+│               │   │       │   │   ├── associated.rb
+│               │   │       │   │   ├── length.rb
+│               │   │       │   │   ├── presence.rb
+│               │   │       │   │   └── uniqueness.rb
+│               │   │       │   ├── validations.rb
+│               │   │       │   └── version.rb
+│               │   │       ├── active_record.rb
+│               │   │       └── rails
+│               │   │           └── generators
+│               │   │               ├── active_record
+│               │   │               │   ├── migration
+│               │   │               │   │   ├── migration_generator.rb
+│               │   │               │   │   └── templates
+│               │   │               │   │       ├── create_table_migration.rb
+│               │   │               │   │       └── migration.rb
+│               │   │               │   ├── migration.rb
+│               │   │               │   └── model
+│               │   │               │       ├── model_generator.rb
+│               │   │               │       └── templates
+│               │   │               │           ├── application_record.rb
+│               │   │               │           ├── model.rb
+│               │   │               │           └── module.rb
+│               │   │               └── active_record.rb
+│               │   ├── activesupport-5.1.4
+│               │   │   ├── CHANGELOG.md
+│               │   │   ├── MIT-LICENSE
+│               │   │   ├── README.rdoc
+│               │   │   └── lib
+│               │   │       ├── active_support
+│               │   │       │   ├── all.rb
+│               │   │       │   ├── array_inquirer.rb
+│               │   │       │   ├── backtrace_cleaner.rb
+│               │   │       │   ├── benchmarkable.rb
+│               │   │       │   ├── builder.rb
+│               │   │       │   ├── cache
+│               │   │       │   │   ├── file_store.rb
+│               │   │       │   │   ├── mem_cache_store.rb
+│               │   │       │   │   ├── memory_store.rb
+│               │   │       │   │   ├── null_store.rb
+│               │   │       │   │   └── strategy
+│               │   │       │   │       ├── local_cache.rb
+│               │   │       │   │       └── local_cache_middleware.rb
+│               │   │       │   ├── cache.rb
+│               │   │       │   ├── callbacks.rb
+│               │   │       │   ├── concern.rb
+│               │   │       │   ├── concurrency
+│               │   │       │   │   └── share_lock.rb
+│               │   │       │   ├── configurable.rb
+│               │   │       │   ├── core_ext
+│               │   │       │   │   ├── array
+│               │   │       │   │   │   ├── access.rb
+│               │   │       │   │   │   ├── conversions.rb
+│               │   │       │   │   │   ├── extract_options.rb
+│               │   │       │   │   │   ├── grouping.rb
+│               │   │       │   │   │   ├── inquiry.rb
+│               │   │       │   │   │   ├── prepend_and_append.rb
+│               │   │       │   │   │   └── wrap.rb
+│               │   │       │   │   ├── array.rb
+│               │   │       │   │   ├── benchmark.rb
+│               │   │       │   │   ├── big_decimal
+│               │   │       │   │   │   └── conversions.rb
+│               │   │       │   │   ├── big_decimal.rb
+│               │   │       │   │   ├── class
+│               │   │       │   │   │   ├── attribute.rb
+│               │   │       │   │   │   ├── attribute_accessors.rb
+│               │   │       │   │   │   └── subclasses.rb
+│               │   │       │   │   ├── class.rb
+│               │   │       │   │   ├── date
+│               │   │       │   │   │   ├── acts_like.rb
+│               │   │       │   │   │   ├── blank.rb
+│               │   │       │   │   │   ├── calculations.rb
+│               │   │       │   │   │   ├── conversions.rb
+│               │   │       │   │   │   └── zones.rb
+│               │   │       │   │   ├── date.rb
+│               │   │       │   │   ├── date_and_time
+│               │   │       │   │   │   ├── calculations.rb
+│               │   │       │   │   │   ├── compatibility.rb
+│               │   │       │   │   │   └── zones.rb
+│               │   │       │   │   ├── date_time
+│               │   │       │   │   │   ├── acts_like.rb
+│               │   │       │   │   │   ├── blank.rb
+│               │   │       │   │   │   ├── calculations.rb
+│               │   │       │   │   │   ├── compatibility.rb
+│               │   │       │   │   │   └── conversions.rb
+│               │   │       │   │   ├── date_time.rb
+│               │   │       │   │   ├── digest
+│               │   │       │   │   │   └── uuid.rb
+│               │   │       │   │   ├── enumerable.rb
+│               │   │       │   │   ├── file
+│               │   │       │   │   │   └── atomic.rb
+│               │   │       │   │   ├── file.rb
+│               │   │       │   │   ├── hash
+│               │   │       │   │   │   ├── compact.rb
+│               │   │       │   │   │   ├── conversions.rb
+│               │   │       │   │   │   ├── deep_merge.rb
+│               │   │       │   │   │   ├── except.rb
+│               │   │       │   │   │   ├── indifferent_access.rb
+│               │   │       │   │   │   ├── keys.rb
+│               │   │       │   │   │   ├── reverse_merge.rb
+│               │   │       │   │   │   ├── slice.rb
+│               │   │       │   │   │   └── transform_values.rb
+│               │   │       │   │   ├── hash.rb
+│               │   │       │   │   ├── integer
+│               │   │       │   │   │   ├── inflections.rb
+│               │   │       │   │   │   ├── multiple.rb
+│               │   │       │   │   │   └── time.rb
+│               │   │       │   │   ├── integer.rb
+│               │   │       │   │   ├── kernel
+│               │   │       │   │   │   ├── agnostics.rb
+│               │   │       │   │   │   ├── concern.rb
+│               │   │       │   │   │   ├── reporting.rb
+│               │   │       │   │   │   └── singleton_class.rb
+│               │   │       │   │   ├── kernel.rb
+│               │   │       │   │   ├── load_error.rb
+│               │   │       │   │   ├── marshal.rb
+│               │   │       │   │   ├── module
+│               │   │       │   │   │   ├── aliasing.rb
+│               │   │       │   │   │   ├── anonymous.rb
+│               │   │       │   │   │   ├── attr_internal.rb
+│               │   │       │   │   │   ├── attribute_accessors.rb
+│               │   │       │   │   │   ├── attribute_accessors_per_thread.rb
+│               │   │       │   │   │   ├── concerning.rb
+│               │   │       │   │   │   ├── delegation.rb
+│               │   │       │   │   │   ├── deprecation.rb
+│               │   │       │   │   │   ├── introspection.rb
+│               │   │       │   │   │   ├── reachable.rb
+│               │   │       │   │   │   └── remove_method.rb
+│               │   │       │   │   ├── module.rb
+│               │   │       │   │   ├── name_error.rb
+│               │   │       │   │   ├── numeric
+│               │   │       │   │   │   ├── bytes.rb
+│               │   │       │   │   │   ├── conversions.rb
+│               │   │       │   │   │   ├── inquiry.rb
+│               │   │       │   │   │   └── time.rb
+│               │   │       │   │   ├── numeric.rb
+│               │   │       │   │   ├── object
+│               │   │       │   │   │   ├── acts_like.rb
+│               │   │       │   │   │   ├── blank.rb
+│               │   │       │   │   │   ├── conversions.rb
+│               │   │       │   │   │   ├── deep_dup.rb
+│               │   │       │   │   │   ├── duplicable.rb
+│               │   │       │   │   │   ├── inclusion.rb
+│               │   │       │   │   │   ├── instance_variables.rb
+│               │   │       │   │   │   ├── json.rb
+│               │   │       │   │   │   ├── to_param.rb
+│               │   │       │   │   │   ├── to_query.rb
+│               │   │       │   │   │   ├── try.rb
+│               │   │       │   │   │   └── with_options.rb
+│               │   │       │   │   ├── object.rb
+│               │   │       │   │   ├── range
+│               │   │       │   │   │   ├── conversions.rb
+│               │   │       │   │   │   ├── each.rb
+│               │   │       │   │   │   ├── include_range.rb
+│               │   │       │   │   │   └── overlaps.rb
+│               │   │       │   │   ├── range.rb
+│               │   │       │   │   ├── regexp.rb
+│               │   │       │   │   ├── securerandom.rb
+│               │   │       │   │   ├── string
+│               │   │       │   │   │   ├── access.rb
+│               │   │       │   │   │   ├── behavior.rb
+│               │   │       │   │   │   ├── conversions.rb
+│               │   │       │   │   │   ├── exclude.rb
+│               │   │       │   │   │   ├── filters.rb
+│               │   │       │   │   │   ├── indent.rb
+│               │   │       │   │   │   ├── inflections.rb
+│               │   │       │   │   │   ├── inquiry.rb
+│               │   │       │   │   │   ├── multibyte.rb
+│               │   │       │   │   │   ├── output_safety.rb
+│               │   │       │   │   │   ├── starts_ends_with.rb
+│               │   │       │   │   │   ├── strip.rb
+│               │   │       │   │   │   └── zones.rb
+│               │   │       │   │   ├── string.rb
+│               │   │       │   │   ├── time
+│               │   │       │   │   │   ├── acts_like.rb
+│               │   │       │   │   │   ├── calculations.rb
+│               │   │       │   │   │   ├── compatibility.rb
+│               │   │       │   │   │   ├── conversions.rb
+│               │   │       │   │   │   └── zones.rb
+│               │   │       │   │   ├── time.rb
+│               │   │       │   │   └── uri.rb
+│               │   │       │   ├── core_ext.rb
+│               │   │       │   ├── dependencies
+│               │   │       │   │   ├── autoload.rb
+│               │   │       │   │   └── interlock.rb
+│               │   │       │   ├── dependencies.rb
+│               │   │       │   ├── deprecation
+│               │   │       │   │   ├── behaviors.rb
+│               │   │       │   │   ├── constant_accessor.rb
+│               │   │       │   │   ├── instance_delegator.rb
+│               │   │       │   │   ├── method_wrappers.rb
+│               │   │       │   │   ├── proxy_wrappers.rb
+│               │   │       │   │   └── reporting.rb
+│               │   │       │   ├── deprecation.rb
+│               │   │       │   ├── descendants_tracker.rb
+│               │   │       │   ├── duration
+│               │   │       │   │   ├── iso8601_parser.rb
+│               │   │       │   │   └── iso8601_serializer.rb
+│               │   │       │   ├── duration.rb
+│               │   │       │   ├── evented_file_update_checker.rb
+│               │   │       │   ├── execution_wrapper.rb
+│               │   │       │   ├── executor.rb
+│               │   │       │   ├── file_update_checker.rb
+│               │   │       │   ├── gem_version.rb
+│               │   │       │   ├── gzip.rb
+│               │   │       │   ├── hash_with_indifferent_access.rb
+│               │   │       │   ├── i18n.rb
+│               │   │       │   ├── i18n_railtie.rb
+│               │   │       │   ├── inflections.rb
+│               │   │       │   ├── inflector
+│               │   │       │   │   ├── inflections.rb
+│               │   │       │   │   ├── methods.rb
+│               │   │       │   │   └── transliterate.rb
+│               │   │       │   ├── inflector.rb
+│               │   │       │   ├── json
+│               │   │       │   │   ├── decoding.rb
+│               │   │       │   │   └── encoding.rb
+│               │   │       │   ├── json.rb
+│               │   │       │   ├── key_generator.rb
+│               │   │       │   ├── lazy_load_hooks.rb
+│               │   │       │   ├── locale
+│               │   │       │   │   └── en.yml
+│               │   │       │   ├── log_subscriber
+│               │   │       │   │   └── test_helper.rb
+│               │   │       │   ├── log_subscriber.rb
+│               │   │       │   ├── logger.rb
+│               │   │       │   ├── logger_silence.rb
+│               │   │       │   ├── logger_thread_safe_level.rb
+│               │   │       │   ├── message_encryptor.rb
+│               │   │       │   ├── message_verifier.rb
+│               │   │       │   ├── multibyte
+│               │   │       │   │   ├── chars.rb
+│               │   │       │   │   └── unicode.rb
+│               │   │       │   ├── multibyte.rb
+│               │   │       │   ├── notifications
+│               │   │       │   │   ├── fanout.rb
+│               │   │       │   │   └── instrumenter.rb
+│               │   │       │   ├── notifications.rb
+│               │   │       │   ├── number_helper
+│               │   │       │   │   ├── number_converter.rb
+│               │   │       │   │   ├── number_to_currency_converter.rb
+│               │   │       │   │   ├── number_to_delimited_converter.rb
+│               │   │       │   │   ├── number_to_human_converter.rb
+│               │   │       │   │   ├── number_to_human_size_converter.rb
+│               │   │       │   │   ├── number_to_percentage_converter.rb
+│               │   │       │   │   ├── number_to_phone_converter.rb
+│               │   │       │   │   ├── number_to_rounded_converter.rb
+│               │   │       │   │   └── rounding_helper.rb
+│               │   │       │   ├── number_helper.rb
+│               │   │       │   ├── option_merger.rb
+│               │   │       │   ├── ordered_hash.rb
+│               │   │       │   ├── ordered_options.rb
+│               │   │       │   ├── per_thread_registry.rb
+│               │   │       │   ├── proxy_object.rb
+│               │   │       │   ├── rails.rb
+│               │   │       │   ├── railtie.rb
+│               │   │       │   ├── reloader.rb
+│               │   │       │   ├── rescuable.rb
+│               │   │       │   ├── security_utils.rb
+│               │   │       │   ├── string_inquirer.rb
+│               │   │       │   ├── subscriber.rb
+│               │   │       │   ├── tagged_logging.rb
+│               │   │       │   ├── test_case.rb
+│               │   │       │   ├── testing
+│               │   │       │   │   ├── assertions.rb
+│               │   │       │   │   ├── autorun.rb
+│               │   │       │   │   ├── constant_lookup.rb
+│               │   │       │   │   ├── declarative.rb
+│               │   │       │   │   ├── deprecation.rb
+│               │   │       │   │   ├── file_fixtures.rb
+│               │   │       │   │   ├── isolation.rb
+│               │   │       │   │   ├── method_call_assertions.rb
+│               │   │       │   │   ├── setup_and_teardown.rb
+│               │   │       │   │   ├── stream.rb
+│               │   │       │   │   ├── tagged_logging.rb
+│               │   │       │   │   └── time_helpers.rb
+│               │   │       │   ├── time.rb
+│               │   │       │   ├── time_with_zone.rb
+│               │   │       │   ├── values
+│               │   │       │   │   ├── time_zone.rb
+│               │   │       │   │   └── unicode_tables.dat
+│               │   │       │   ├── version.rb
+│               │   │       │   ├── xml_mini
+│               │   │       │   │   ├── jdom.rb
+│               │   │       │   │   ├── libxml.rb
+│               │   │       │   │   ├── libxmlsax.rb
+│               │   │       │   │   ├── nokogiri.rb
+│               │   │       │   │   ├── nokogirisax.rb
+│               │   │       │   │   └── rexml.rb
+│               │   │       │   └── xml_mini.rb
+│               │   │       └── active_support.rb
+│               │   ├── arel-8.0.0
+│               │   │   ├── History.txt
+│               │   │   ├── MIT-LICENSE.txt
+│               │   │   ├── README.md
+│               │   │   └── lib
+│               │   │       ├── arel
+│               │   │       │   ├── alias_predication.rb
+│               │   │       │   ├── attributes
+│               │   │       │   │   └── attribute.rb
+│               │   │       │   ├── attributes.rb
+│               │   │       │   ├── collectors
+│               │   │       │   │   ├── bind.rb
+│               │   │       │   │   ├── plain_string.rb
+│               │   │       │   │   └── sql_string.rb
+│               │   │       │   ├── compatibility
+│               │   │       │   │   └── wheres.rb
+│               │   │       │   ├── crud.rb
+│               │   │       │   ├── delete_manager.rb
+│               │   │       │   ├── errors.rb
+│               │   │       │   ├── expressions.rb
+│               │   │       │   ├── factory_methods.rb
+│               │   │       │   ├── insert_manager.rb
+│               │   │       │   ├── math.rb
+│               │   │       │   ├── nodes
+│               │   │       │   │   ├── and.rb
+│               │   │       │   │   ├── ascending.rb
+│               │   │       │   │   ├── binary.rb
+│               │   │       │   │   ├── bind_param.rb
+│               │   │       │   │   ├── case.rb
+│               │   │       │   │   ├── casted.rb
+│               │   │       │   │   ├── count.rb
+│               │   │       │   │   ├── delete_statement.rb
+│               │   │       │   │   ├── descending.rb
+│               │   │       │   │   ├── equality.rb
+│               │   │       │   │   ├── extract.rb
+│               │   │       │   │   ├── false.rb
+│               │   │       │   │   ├── full_outer_join.rb
+│               │   │       │   │   ├── function.rb
+│               │   │       │   │   ├── grouping.rb
+│               │   │       │   │   ├── in.rb
+│               │   │       │   │   ├── infix_operation.rb
+│               │   │       │   │   ├── inner_join.rb
+│               │   │       │   │   ├── insert_statement.rb
+│               │   │       │   │   ├── join_source.rb
+│               │   │       │   │   ├── matches.rb
+│               │   │       │   │   ├── named_function.rb
+│               │   │       │   │   ├── node.rb
+│               │   │       │   │   ├── outer_join.rb
+│               │   │       │   │   ├── over.rb
+│               │   │       │   │   ├── regexp.rb
+│               │   │       │   │   ├── right_outer_join.rb
+│               │   │       │   │   ├── select_core.rb
+│               │   │       │   │   ├── select_statement.rb
+│               │   │       │   │   ├── sql_literal.rb
+│               │   │       │   │   ├── string_join.rb
+│               │   │       │   │   ├── table_alias.rb
+│               │   │       │   │   ├── terminal.rb
+│               │   │       │   │   ├── true.rb
+│               │   │       │   │   ├── unary.rb
+│               │   │       │   │   ├── unary_operation.rb
+│               │   │       │   │   ├── unqualified_column.rb
+│               │   │       │   │   ├── update_statement.rb
+│               │   │       │   │   ├── values.rb
+│               │   │       │   │   ├── window.rb
+│               │   │       │   │   └── with.rb
+│               │   │       │   ├── nodes.rb
+│               │   │       │   ├── order_predications.rb
+│               │   │       │   ├── predications.rb
+│               │   │       │   ├── select_manager.rb
+│               │   │       │   ├── table.rb
+│               │   │       │   ├── tree_manager.rb
+│               │   │       │   ├── update_manager.rb
+│               │   │       │   ├── visitors
+│               │   │       │   │   ├── bind_substitute.rb
+│               │   │       │   │   ├── bind_visitor.rb
+│               │   │       │   │   ├── depth_first.rb
+│               │   │       │   │   ├── dot.rb
+│               │   │       │   │   ├── ibm_db.rb
+│               │   │       │   │   ├── informix.rb
+│               │   │       │   │   ├── mssql.rb
+│               │   │       │   │   ├── mysql.rb
+│               │   │       │   │   ├── oracle.rb
+│               │   │       │   │   ├── oracle12.rb
+│               │   │       │   │   ├── postgresql.rb
+│               │   │       │   │   ├── reduce.rb
+│               │   │       │   │   ├── sqlite.rb
+│               │   │       │   │   ├── to_sql.rb
+│               │   │       │   │   ├── visitor.rb
+│               │   │       │   │   └── where_sql.rb
+│               │   │       │   ├── visitors.rb
+│               │   │       │   └── window_predications.rb
+│               │   │       └── arel.rb
+│               │   ├── concurrent-ruby-1.0.5
+│               │   │   ├── CHANGELOG.md
+│               │   │   ├── LICENSE.txt
+│               │   │   ├── README.md
+│               │   │   └── lib
+│               │   │       ├── concurrent
+│               │   │       │   ├── agent.rb
+│               │   │       │   ├── array.rb
+│               │   │       │   ├── async.rb
+│               │   │       │   ├── atom.rb
+│               │   │       │   ├── atomic
+│               │   │       │   │   ├── abstract_thread_local_var.rb
+│               │   │       │   │   ├── atomic_boolean.rb
+│               │   │       │   │   ├── atomic_fixnum.rb
+│               │   │       │   │   ├── atomic_reference.rb
+│               │   │       │   │   ├── count_down_latch.rb
+│               │   │       │   │   ├── cyclic_barrier.rb
+│               │   │       │   │   ├── event.rb
+│               │   │       │   │   ├── java_count_down_latch.rb
+│               │   │       │   │   ├── java_thread_local_var.rb
+│               │   │       │   │   ├── mutex_atomic_boolean.rb
+│               │   │       │   │   ├── mutex_atomic_fixnum.rb
+│               │   │       │   │   ├── mutex_count_down_latch.rb
+│               │   │       │   │   ├── mutex_semaphore.rb
+│               │   │       │   │   ├── read_write_lock.rb
+│               │   │       │   │   ├── reentrant_read_write_lock.rb
+│               │   │       │   │   ├── ruby_thread_local_var.rb
+│               │   │       │   │   ├── semaphore.rb
+│               │   │       │   │   └── thread_local_var.rb
+│               │   │       │   ├── atomic_reference
+│               │   │       │   │   ├── concurrent_update_error.rb
+│               │   │       │   │   ├── direct_update.rb
+│               │   │       │   │   ├── jruby+truffle.rb
+│               │   │       │   │   ├── jruby.rb
+│               │   │       │   │   ├── mutex_atomic.rb
+│               │   │       │   │   ├── numeric_cas_wrapper.rb
+│               │   │       │   │   ├── rbx.rb
+│               │   │       │   │   └── ruby.rb
+│               │   │       │   ├── atomics.rb
+│               │   │       │   ├── collection
+│               │   │       │   │   ├── copy_on_notify_observer_set.rb
+│               │   │       │   │   ├── copy_on_write_observer_set.rb
+│               │   │       │   │   ├── java_non_concurrent_priority_queue.rb
+│               │   │       │   │   ├── map
+│               │   │       │   │   │   ├── atomic_reference_map_backend.rb
+│               │   │       │   │   │   ├── mri_map_backend.rb
+│               │   │       │   │   │   ├── non_concurrent_map_backend.rb
+│               │   │       │   │   │   └── synchronized_map_backend.rb
+│               │   │       │   │   ├── non_concurrent_priority_queue.rb
+│               │   │       │   │   └── ruby_non_concurrent_priority_queue.rb
+│               │   │       │   ├── concern
+│               │   │       │   │   ├── deprecation.rb
+│               │   │       │   │   ├── dereferenceable.rb
+│               │   │       │   │   ├── logging.rb
+│               │   │       │   │   ├── obligation.rb
+│               │   │       │   │   └── observable.rb
+│               │   │       │   ├── configuration.rb
+│               │   │       │   ├── constants.rb
+│               │   │       │   ├── dataflow.rb
+│               │   │       │   ├── delay.rb
+│               │   │       │   ├── edge.rb
+│               │   │       │   ├── errors.rb
+│               │   │       │   ├── exchanger.rb
+│               │   │       │   ├── executor
+│               │   │       │   │   ├── abstract_executor_service.rb
+│               │   │       │   │   ├── cached_thread_pool.rb
+│               │   │       │   │   ├── executor_service.rb
+│               │   │       │   │   ├── fixed_thread_pool.rb
+│               │   │       │   │   ├── immediate_executor.rb
+│               │   │       │   │   ├── indirect_immediate_executor.rb
+│               │   │       │   │   ├── java_executor_service.rb
+│               │   │       │   │   ├── java_single_thread_executor.rb
+│               │   │       │   │   ├── java_thread_pool_executor.rb
+│               │   │       │   │   ├── ruby_executor_service.rb
+│               │   │       │   │   ├── ruby_single_thread_executor.rb
+│               │   │       │   │   ├── ruby_thread_pool_executor.rb
+│               │   │       │   │   ├── safe_task_executor.rb
+│               │   │       │   │   ├── serial_executor_service.rb
+│               │   │       │   │   ├── serialized_execution.rb
+│               │   │       │   │   ├── serialized_execution_delegator.rb
+│               │   │       │   │   ├── simple_executor_service.rb
+│               │   │       │   │   ├── single_thread_executor.rb
+│               │   │       │   │   ├── thread_pool_executor.rb
+│               │   │       │   │   └── timer_set.rb
+│               │   │       │   ├── executors.rb
+│               │   │       │   ├── future.rb
+│               │   │       │   ├── hash.rb
+│               │   │       │   ├── immutable_struct.rb
+│               │   │       │   ├── ivar.rb
+│               │   │       │   ├── lazy_register.rb
+│               │   │       │   ├── map.rb
+│               │   │       │   ├── maybe.rb
+│               │   │       │   ├── mutable_struct.rb
+│               │   │       │   ├── mvar.rb
+│               │   │       │   ├── options.rb
+│               │   │       │   ├── promise.rb
+│               │   │       │   ├── scheduled_task.rb
+│               │   │       │   ├── settable_struct.rb
+│               │   │       │   ├── synchronization
+│               │   │       │   │   ├── abstract_lockable_object.rb
+│               │   │       │   │   ├── abstract_object.rb
+│               │   │       │   │   ├── abstract_struct.rb
+│               │   │       │   │   ├── condition.rb
+│               │   │       │   │   ├── jruby_lockable_object.rb
+│               │   │       │   │   ├── jruby_object.rb
+│               │   │       │   │   ├── lock.rb
+│               │   │       │   │   ├── lockable_object.rb
+│               │   │       │   │   ├── mri_lockable_object.rb
+│               │   │       │   │   ├── mri_object.rb
+│               │   │       │   │   ├── object.rb
+│               │   │       │   │   ├── rbx_lockable_object.rb
+│               │   │       │   │   ├── rbx_object.rb
+│               │   │       │   │   ├── truffle_lockable_object.rb
+│               │   │       │   │   ├── truffle_object.rb
+│               │   │       │   │   └── volatile.rb
+│               │   │       │   ├── synchronization.rb
+│               │   │       │   ├── thread_safe
+│               │   │       │   │   ├── synchronized_delegator.rb
+│               │   │       │   │   ├── util
+│               │   │       │   │   │   ├── adder.rb
+│               │   │       │   │   │   ├── array_hash_rbx.rb
+│               │   │       │   │   │   ├── cheap_lockable.rb
+│               │   │       │   │   │   ├── power_of_two_tuple.rb
+│               │   │       │   │   │   ├── striped64.rb
+│               │   │       │   │   │   ├── volatile.rb
+│               │   │       │   │   │   └── xor_shift_random.rb
+│               │   │       │   │   └── util.rb
+│               │   │       │   ├── timer_task.rb
+│               │   │       │   ├── tuple.rb
+│               │   │       │   ├── tvar.rb
+│               │   │       │   ├── utility
+│               │   │       │   │   ├── at_exit.rb
+│               │   │       │   │   ├── engine.rb
+│               │   │       │   │   ├── monotonic_time.rb
+│               │   │       │   │   ├── native_extension_loader.rb
+│               │   │       │   │   ├── native_integer.rb
+│               │   │       │   │   └── processor_counter.rb
+│               │   │       │   └── version.rb
+│               │   │       └── concurrent.rb
+│               │   ├── i18n-0.9.3
+│               │   │   ├── MIT-LICENSE
+│               │   │   ├── README.md
+│               │   │   ├── gemfiles
+│               │   │   │   ├── Gemfile.rails-3.2.x
+│               │   │   │   ├── Gemfile.rails-4.0.x
+│               │   │   │   ├── Gemfile.rails-4.1.x
+│               │   │   │   ├── Gemfile.rails-4.2.x
+│               │   │   │   ├── Gemfile.rails-5.0.x
+│               │   │   │   ├── Gemfile.rails-5.1.x
+│               │   │   │   └── Gemfile.rails-master
+│               │   │   ├── lib
+│               │   │   │   ├── i18n
+│               │   │   │   │   ├── backend
+│               │   │   │   │   │   ├── base.rb
+│               │   │   │   │   │   ├── cache.rb
+│               │   │   │   │   │   ├── cascade.rb
+│               │   │   │   │   │   ├── chain.rb
+│               │   │   │   │   │   ├── fallbacks.rb
+│               │   │   │   │   │   ├── flatten.rb
+│               │   │   │   │   │   ├── gettext.rb
+│               │   │   │   │   │   ├── interpolation_compiler.rb
+│               │   │   │   │   │   ├── key_value.rb
+│               │   │   │   │   │   ├── memoize.rb
+│               │   │   │   │   │   ├── metadata.rb
+│               │   │   │   │   │   ├── pluralization.rb
+│               │   │   │   │   │   ├── simple.rb
+│               │   │   │   │   │   └── transliterator.rb
+│               │   │   │   │   ├── backend.rb
+│               │   │   │   │   ├── config.rb
+│               │   │   │   │   ├── core_ext
+│               │   │   │   │   │   ├── hash.rb
+│               │   │   │   │   │   ├── kernel
+│               │   │   │   │   │   │   └── suppress_warnings.rb
+│               │   │   │   │   │   └── string
+│               │   │   │   │   │       └── interpolate.rb
+│               │   │   │   │   ├── exceptions.rb
+│               │   │   │   │   ├── gettext
+│               │   │   │   │   │   ├── helpers.rb
+│               │   │   │   │   │   └── po_parser.rb
+│               │   │   │   │   ├── gettext.rb
+│               │   │   │   │   ├── interpolate
+│               │   │   │   │   │   └── ruby.rb
+│               │   │   │   │   ├── locale
+│               │   │   │   │   │   ├── fallbacks.rb
+│               │   │   │   │   │   ├── tag
+│               │   │   │   │   │   │   ├── parents.rb
+│               │   │   │   │   │   │   ├── rfc4646.rb
+│               │   │   │   │   │   │   └── simple.rb
+│               │   │   │   │   │   └── tag.rb
+│               │   │   │   │   ├── locale.rb
+│               │   │   │   │   ├── middleware.rb
+│               │   │   │   │   ├── tests
+│               │   │   │   │   │   ├── basics.rb
+│               │   │   │   │   │   ├── defaults.rb
+│               │   │   │   │   │   ├── interpolation.rb
+│               │   │   │   │   │   ├── link.rb
+│               │   │   │   │   │   ├── localization
+│               │   │   │   │   │   │   ├── date.rb
+│               │   │   │   │   │   │   ├── date_time.rb
+│               │   │   │   │   │   │   ├── procs.rb
+│               │   │   │   │   │   │   └── time.rb
+│               │   │   │   │   │   ├── localization.rb
+│               │   │   │   │   │   ├── lookup.rb
+│               │   │   │   │   │   ├── pluralization.rb
+│               │   │   │   │   │   └── procs.rb
+│               │   │   │   │   ├── tests.rb
+│               │   │   │   │   └── version.rb
+│               │   │   │   └── i18n.rb
+│               │   │   └── test
+│               │   │       ├── api
+│               │   │       │   ├── all_features_test.rb
+│               │   │       │   ├── cascade_test.rb
+│               │   │       │   ├── chain_test.rb
+│               │   │       │   ├── fallbacks_test.rb
+│               │   │       │   ├── key_value_test.rb
+│               │   │       │   ├── memoize_test.rb
+│               │   │       │   ├── override_test.rb
+│               │   │       │   ├── pluralization_test.rb
+│               │   │       │   └── simple_test.rb
+│               │   │       ├── backend
+│               │   │       │   ├── cache_test.rb
+│               │   │       │   ├── cascade_test.rb
+│               │   │       │   ├── chain_test.rb
+│               │   │       │   ├── exceptions_test.rb
+│               │   │       │   ├── fallbacks_test.rb
+│               │   │       │   ├── interpolation_compiler_test.rb
+│               │   │       │   ├── key_value_test.rb
+│               │   │       │   ├── memoize_test.rb
+│               │   │       │   ├── metadata_test.rb
+│               │   │       │   ├── pluralization_test.rb
+│               │   │       │   ├── simple_test.rb
+│               │   │       │   └── transliterator_test.rb
+│               │   │       ├── core_ext
+│               │   │       │   └── hash_test.rb
+│               │   │       ├── gettext
+│               │   │       │   ├── api_test.rb
+│               │   │       │   └── backend_test.rb
+│               │   │       ├── i18n
+│               │   │       │   ├── exceptions_test.rb
+│               │   │       │   ├── gettext_plural_keys_test.rb
+│               │   │       │   ├── interpolate_test.rb
+│               │   │       │   ├── load_path_test.rb
+│               │   │       │   └── middleware_test.rb
+│               │   │       ├── i18n_test.rb
+│               │   │       ├── locale
+│               │   │       │   ├── fallbacks_test.rb
+│               │   │       │   └── tag
+│               │   │       │       ├── rfc4646_test.rb
+│               │   │       │       └── simple_test.rb
+│               │   │       ├── run_all.rb
+│               │   │       ├── test_data
+│               │   │       │   └── locales
+│               │   │       │       ├── de.po
+│               │   │       │       ├── en.rb
+│               │   │       │       ├── en.yml
+│               │   │       │       ├── invalid
+│               │   │       │       │   ├── empty.yml
+│               │   │       │       │   └── syntax.yml
+│               │   │       │       └── plurals.rb
+│               │   │       └── test_helper.rb
+│               │   ├── minitest-5.11.1
+│               │   │   ├── History.rdoc
+│               │   │   ├── Manifest.txt
+│               │   │   ├── README.rdoc
+│               │   │   ├── Rakefile
+│               │   │   ├── design_rationale.rb
+│               │   │   ├── lib
+│               │   │   │   ├── hoe
+│               │   │   │   │   └── minitest.rb
+│               │   │   │   ├── minitest
+│               │   │   │   │   ├── assertions.rb
+│               │   │   │   │   ├── autorun.rb
+│               │   │   │   │   ├── benchmark.rb
+│               │   │   │   │   ├── expectations.rb
+│               │   │   │   │   ├── hell.rb
+│               │   │   │   │   ├── mock.rb
+│               │   │   │   │   ├── parallel.rb
+│               │   │   │   │   ├── pride.rb
+│               │   │   │   │   ├── pride_plugin.rb
+│               │   │   │   │   ├── spec.rb
+│               │   │   │   │   ├── test.rb
+│               │   │   │   │   └── unit.rb
+│               │   │   │   └── minitest.rb
+│               │   │   └── test
+│               │   │       └── minitest
+│               │   │           ├── metametameta.rb
+│               │   │           ├── test_minitest_benchmark.rb
+│               │   │           ├── test_minitest_mock.rb
+│               │   │           ├── test_minitest_reporter.rb
+│               │   │           ├── test_minitest_spec.rb
+│               │   │           └── test_minitest_test.rb
+│               │   ├── mustermann-1.0.1
+│               │   │   ├── LICENSE
+│               │   │   ├── README.md
+│               │   │   ├── bench
+│               │   │   │   ├── capturing.rb
+│               │   │   │   ├── regexp.rb
+│               │   │   │   ├── simple_vs_sinatra.rb
+│               │   │   │   └── template_vs_addressable.rb
+│               │   │   ├── lib
+│               │   │   │   ├── mustermann
+│               │   │   │   │   ├── ast
+│               │   │   │   │   │   ├── boundaries.rb
+│               │   │   │   │   │   ├── compiler.rb
+│               │   │   │   │   │   ├── expander.rb
+│               │   │   │   │   │   ├── node.rb
+│               │   │   │   │   │   ├── param_scanner.rb
+│               │   │   │   │   │   ├── parser.rb
+│               │   │   │   │   │   ├── pattern.rb
+│               │   │   │   │   │   ├── template_generator.rb
+│               │   │   │   │   │   ├── transformer.rb
+│               │   │   │   │   │   ├── translator.rb
+│               │   │   │   │   │   └── validation.rb
+│               │   │   │   │   ├── caster.rb
+│               │   │   │   │   ├── composite.rb
+│               │   │   │   │   ├── concat.rb
+│               │   │   │   │   ├── equality_map.rb
+│               │   │   │   │   ├── error.rb
+│               │   │   │   │   ├── expander.rb
+│               │   │   │   │   ├── extension.rb
+│               │   │   │   │   ├── identity.rb
+│               │   │   │   │   ├── mapper.rb
+│               │   │   │   │   ├── pattern.rb
+│               │   │   │   │   ├── pattern_cache.rb
+│               │   │   │   │   ├── regexp.rb
+│               │   │   │   │   ├── regexp_based.rb
+│               │   │   │   │   ├── regular.rb
+│               │   │   │   │   ├── simple_match.rb
+│               │   │   │   │   ├── sinatra
+│               │   │   │   │   │   ├── parser.rb
+│               │   │   │   │   │   ├── safe_renderer.rb
+│               │   │   │   │   │   └── try_convert.rb
+│               │   │   │   │   ├── sinatra.rb
+│               │   │   │   │   ├── to_pattern.rb
+│               │   │   │   │   └── version.rb
+│               │   │   │   └── mustermann.rb
+│               │   │   ├── mustermann.gemspec
+│               │   │   └── spec
+│               │   │       ├── ast_spec.rb
+│               │   │       ├── composite_spec.rb
+│               │   │       ├── concat_spec.rb
+│               │   │       ├── equality_map_spec.rb
+│               │   │       ├── expander_spec.rb
+│               │   │       ├── extension_spec.rb
+│               │   │       ├── identity_spec.rb
+│               │   │       ├── mapper_spec.rb
+│               │   │       ├── mustermann_spec.rb
+│               │   │       ├── pattern_spec.rb
+│               │   │       ├── regexp_based_spec.rb
+│               │   │       ├── regular_spec.rb
+│               │   │       ├── simple_match_spec.rb
+│               │   │       ├── sinatra_spec.rb
+│               │   │       └── to_pattern_spec.rb
+│               │   ├── rack-2.0.3
+│               │   │   ├── COPYING
+│               │   │   ├── HISTORY.md
+│               │   │   ├── README.rdoc
+│               │   │   ├── Rakefile
+│               │   │   ├── SPEC
+│               │   │   ├── bin
+│               │   │   │   └── rackup
+│               │   │   ├── contrib
+│               │   │   │   ├── rack.png
+│               │   │   │   ├── rack.svg
+│               │   │   │   ├── rack_logo.svg
+│               │   │   │   └── rdoc.css
+│               │   │   ├── example
+│               │   │   │   ├── lobster.ru
+│               │   │   │   ├── protectedlobster.rb
+│               │   │   │   └── protectedlobster.ru
+│               │   │   ├── lib
+│               │   │   │   ├── rack
+│               │   │   │   │   ├── auth
+│               │   │   │   │   │   ├── abstract
+│               │   │   │   │   │   │   ├── handler.rb
+│               │   │   │   │   │   │   └── request.rb
+│               │   │   │   │   │   ├── basic.rb
+│               │   │   │   │   │   └── digest
+│               │   │   │   │   │       ├── md5.rb
+│               │   │   │   │   │       ├── nonce.rb
+│               │   │   │   │   │       ├── params.rb
+│               │   │   │   │   │       └── request.rb
+│               │   │   │   │   ├── body_proxy.rb
+│               │   │   │   │   ├── builder.rb
+│               │   │   │   │   ├── cascade.rb
+│               │   │   │   │   ├── chunked.rb
+│               │   │   │   │   ├── common_logger.rb
+│               │   │   │   │   ├── conditional_get.rb
+│               │   │   │   │   ├── config.rb
+│               │   │   │   │   ├── content_length.rb
+│               │   │   │   │   ├── content_type.rb
+│               │   │   │   │   ├── deflater.rb
+│               │   │   │   │   ├── directory.rb
+│               │   │   │   │   ├── etag.rb
+│               │   │   │   │   ├── events.rb
+│               │   │   │   │   ├── file.rb
+│               │   │   │   │   ├── handler
+│               │   │   │   │   │   ├── cgi.rb
+│               │   │   │   │   │   ├── fastcgi.rb
+│               │   │   │   │   │   ├── lsws.rb
+│               │   │   │   │   │   ├── scgi.rb
+│               │   │   │   │   │   ├── thin.rb
+│               │   │   │   │   │   └── webrick.rb
+│               │   │   │   │   ├── handler.rb
+│               │   │   │   │   ├── head.rb
+│               │   │   │   │   ├── lint.rb
+│               │   │   │   │   ├── lobster.rb
+│               │   │   │   │   ├── lock.rb
+│               │   │   │   │   ├── logger.rb
+│               │   │   │   │   ├── media_type.rb
+│               │   │   │   │   ├── method_override.rb
+│               │   │   │   │   ├── mime.rb
+│               │   │   │   │   ├── mock.rb
+│               │   │   │   │   ├── multipart
+│               │   │   │   │   │   ├── generator.rb
+│               │   │   │   │   │   ├── parser.rb
+│               │   │   │   │   │   └── uploaded_file.rb
+│               │   │   │   │   ├── multipart.rb
+│               │   │   │   │   ├── null_logger.rb
+│               │   │   │   │   ├── query_parser.rb
+│               │   │   │   │   ├── recursive.rb
+│               │   │   │   │   ├── reloader.rb
+│               │   │   │   │   ├── request.rb
+│               │   │   │   │   ├── response.rb
+│               │   │   │   │   ├── rewindable_input.rb
+│               │   │   │   │   ├── runtime.rb
+│               │   │   │   │   ├── sendfile.rb
+│               │   │   │   │   ├── server.rb
+│               │   │   │   │   ├── session
+│               │   │   │   │   │   ├── abstract
+│               │   │   │   │   │   │   └── id.rb
+│               │   │   │   │   │   ├── cookie.rb
+│               │   │   │   │   │   ├── memcache.rb
+│               │   │   │   │   │   └── pool.rb
+│               │   │   │   │   ├── show_exceptions.rb
+│               │   │   │   │   ├── show_status.rb
+│               │   │   │   │   ├── static.rb
+│               │   │   │   │   ├── tempfile_reaper.rb
+│               │   │   │   │   ├── urlmap.rb
+│               │   │   │   │   └── utils.rb
+│               │   │   │   └── rack.rb
+│               │   │   ├── rack.gemspec
+│               │   │   └── test
+│               │   │       ├── builder
+│               │   │       │   ├── an_underscore_app.rb
+│               │   │       │   ├── anything.rb
+│               │   │       │   ├── comment.ru
+│               │   │       │   ├── end.ru
+│               │   │       │   ├── line.ru
+│               │   │       │   └── options.ru
+│               │   │       ├── cgi
+│               │   │       │   ├── assets
+│               │   │       │   │   ├── folder
+│               │   │       │   │   │   └── test.js
+│               │   │       │   │   ├── fonts
+│               │   │       │   │   │   └── font.eot
+│               │   │       │   │   ├── images
+│               │   │       │   │   │   └── image.png
+│               │   │       │   │   ├── index.html
+│               │   │       │   │   ├── javascripts
+│               │   │       │   │   │   └── app.js
+│               │   │       │   │   └── stylesheets
+│               │   │       │   │       └── app.css
+│               │   │       │   ├── lighttpd.conf
+│               │   │       │   ├── rackup_stub.rb
+│               │   │       │   ├── sample_rackup.ru
+│               │   │       │   ├── test
+│               │   │       │   ├── test+directory
+│               │   │       │   │   └── test+file
+│               │   │       │   ├── test.fcgi
+│               │   │       │   ├── test.gz
+│               │   │       │   └── test.ru
+│               │   │       ├── gemloader.rb
+│               │   │       ├── helper.rb
+│               │   │       ├── multipart
+│               │   │       │   ├── bad_robots
+│               │   │       │   ├── binary
+│               │   │       │   ├── content_type_and_no_filename
+│               │   │       │   ├── empty
+│               │   │       │   ├── fail_16384_nofile
+│               │   │       │   ├── file1.txt
+│               │   │       │   ├── filename_and_modification_param
+│               │   │       │   ├── filename_and_no_name
+│               │   │       │   ├── filename_with_encoded_words
+│               │   │       │   ├── filename_with_escaped_quotes
+│               │   │       │   ├── filename_with_escaped_quotes_and_modification_param
+│               │   │       │   ├── filename_with_null_byte
+│               │   │       │   ├── filename_with_percent_escaped_quotes
+│               │   │       │   ├── filename_with_single_quote
+│               │   │       │   ├── filename_with_unescaped_percentages
+│               │   │       │   ├── filename_with_unescaped_percentages2
+│               │   │       │   ├── filename_with_unescaped_percentages3
+│               │   │       │   ├── filename_with_unescaped_quotes
+│               │   │       │   ├── ie
+│               │   │       │   ├── invalid_character
+│               │   │       │   ├── mixed_files
+│               │   │       │   ├── nested
+│               │   │       │   ├── none
+│               │   │       │   ├── quoted
+│               │   │       │   ├── rack-logo.png
+│               │   │       │   ├── semicolon
+│               │   │       │   ├── text
+│               │   │       │   ├── three_files_three_fields
+│               │   │       │   ├── unity3d_wwwform
+│               │   │       │   └── webkit
+│               │   │       ├── rackup
+│               │   │       │   └── config.ru
+│               │   │       ├── registering_handler
+│               │   │       │   └── rack
+│               │   │       │       └── handler
+│               │   │       │           └── registering_myself.rb
+│               │   │       ├── spec_auth_basic.rb
+│               │   │       ├── spec_auth_digest.rb
+│               │   │       ├── spec_body_proxy.rb
+│               │   │       ├── spec_builder.rb
+│               │   │       ├── spec_cascade.rb
+│               │   │       ├── spec_cgi.rb
+│               │   │       ├── spec_chunked.rb
+│               │   │       ├── spec_common_logger.rb
+│               │   │       ├── spec_conditional_get.rb
+│               │   │       ├── spec_config.rb
+│               │   │       ├── spec_content_length.rb
+│               │   │       ├── spec_content_type.rb
+│               │   │       ├── spec_deflater.rb
+│               │   │       ├── spec_directory.rb
+│               │   │       ├── spec_etag.rb
+│               │   │       ├── spec_events.rb
+│               │   │       ├── spec_fastcgi.rb
+│               │   │       ├── spec_file.rb
+│               │   │       ├── spec_handler.rb
+│               │   │       ├── spec_head.rb
+│               │   │       ├── spec_lint.rb
+│               │   │       ├── spec_lobster.rb
+│               │   │       ├── spec_lock.rb
+│               │   │       ├── spec_logger.rb
+│               │   │       ├── spec_media_type.rb
+│               │   │       ├── spec_method_override.rb
+│               │   │       ├── spec_mime.rb
+│               │   │       ├── spec_mock.rb
+│               │   │       ├── spec_multipart.rb
+│               │   │       ├── spec_null_logger.rb
+│               │   │       ├── spec_recursive.rb
+│               │   │       ├── spec_request.rb
+│               │   │       ├── spec_response.rb
+│               │   │       ├── spec_rewindable_input.rb
+│               │   │       ├── spec_runtime.rb
+│               │   │       ├── spec_sendfile.rb
+│               │   │       ├── spec_server.rb
+│               │   │       ├── spec_session_abstract_id.rb
+│               │   │       ├── spec_session_abstract_session_hash.rb
+│               │   │       ├── spec_session_cookie.rb
+│               │   │       ├── spec_session_memcache.rb
+│               │   │       ├── spec_session_pool.rb
+│               │   │       ├── spec_show_exceptions.rb
+│               │   │       ├── spec_show_status.rb
+│               │   │       ├── spec_static.rb
+│               │   │       ├── spec_tempfile_reaper.rb
+│               │   │       ├── spec_thin.rb
+│               │   │       ├── spec_urlmap.rb
+│               │   │       ├── spec_utils.rb
+│               │   │       ├── spec_version.rb
+│               │   │       ├── spec_webrick.rb
+│               │   │       ├── static
+│               │   │       │   ├── another
+│               │   │       │   │   └── index.html
+│               │   │       │   ├── foo.html
+│               │   │       │   └── index.html
+│               │   │       ├── testrequest.rb
+│               │   │       └── unregistered_handler
+│               │   │           └── rack
+│               │   │               └── handler
+│               │   │                   ├── unregistered.rb
+│               │   │                   └── unregistered_long_one.rb
+│               │   ├── rack-protection-2.0.0
+│               │   │   ├── Gemfile
+│               │   │   ├── License
+│               │   │   ├── README.md
+│               │   │   ├── Rakefile
+│               │   │   ├── lib
+│               │   │   │   ├── rack
+│               │   │   │   │   ├── protection
+│               │   │   │   │   │   ├── authenticity_token.rb
+│               │   │   │   │   │   ├── base.rb
+│               │   │   │   │   │   ├── content_security_policy.rb
+│               │   │   │   │   │   ├── cookie_tossing.rb
+│               │   │   │   │   │   ├── escaped_params.rb
+│               │   │   │   │   │   ├── form_token.rb
+│               │   │   │   │   │   ├── frame_options.rb
+│               │   │   │   │   │   ├── http_origin.rb
+│               │   │   │   │   │   ├── ip_spoofing.rb
+│               │   │   │   │   │   ├── json_csrf.rb
+│               │   │   │   │   │   ├── path_traversal.rb
+│               │   │   │   │   │   ├── remote_referrer.rb
+│               │   │   │   │   │   ├── remote_token.rb
+│               │   │   │   │   │   ├── session_hijacking.rb
+│               │   │   │   │   │   ├── strict_transport.rb
+│               │   │   │   │   │   ├── version.rb
+│               │   │   │   │   │   └── xss_header.rb
+│               │   │   │   │   └── protection.rb
+│               │   │   │   └── rack-protection.rb
+│               │   │   └── rack-protection.gemspec
+│               │   ├── rubyzip-1.2.1
+│               │   │   ├── README.md
+│               │   │   ├── Rakefile
+│               │   │   ├── TODO
+│               │   │   ├── lib
+│               │   │   │   ├── zip
+│               │   │   │   │   ├── central_directory.rb
+│               │   │   │   │   ├── compressor.rb
+│               │   │   │   │   ├── constants.rb
+│               │   │   │   │   ├── crypto
+│               │   │   │   │   │   ├── encryption.rb
+│               │   │   │   │   │   ├── null_encryption.rb
+│               │   │   │   │   │   └── traditional_encryption.rb
+│               │   │   │   │   ├── decompressor.rb
+│               │   │   │   │   ├── deflater.rb
+│               │   │   │   │   ├── dos_time.rb
+│               │   │   │   │   ├── entry.rb
+│               │   │   │   │   ├── entry_set.rb
+│               │   │   │   │   ├── errors.rb
+│               │   │   │   │   ├── extra_field
+│               │   │   │   │   │   ├── generic.rb
+│               │   │   │   │   │   ├── ntfs.rb
+│               │   │   │   │   │   ├── old_unix.rb
+│               │   │   │   │   │   ├── universal_time.rb
+│               │   │   │   │   │   ├── unix.rb
+│               │   │   │   │   │   ├── zip64.rb
+│               │   │   │   │   │   └── zip64_placeholder.rb
+│               │   │   │   │   ├── extra_field.rb
+│               │   │   │   │   ├── file.rb
+│               │   │   │   │   ├── filesystem.rb
+│               │   │   │   │   ├── inflater.rb
+│               │   │   │   │   ├── input_stream.rb
+│               │   │   │   │   ├── ioextras
+│               │   │   │   │   │   ├── abstract_input_stream.rb
+│               │   │   │   │   │   └── abstract_output_stream.rb
+│               │   │   │   │   ├── ioextras.rb
+│               │   │   │   │   ├── null_compressor.rb
+│               │   │   │   │   ├── null_decompressor.rb
+│               │   │   │   │   ├── null_input_stream.rb
+│               │   │   │   │   ├── output_stream.rb
+│               │   │   │   │   ├── pass_thru_compressor.rb
+│               │   │   │   │   ├── pass_thru_decompressor.rb
+│               │   │   │   │   ├── streamable_directory.rb
+│               │   │   │   │   ├── streamable_stream.rb
+│               │   │   │   │   └── version.rb
+│               │   │   │   └── zip.rb
+│               │   │   ├── samples
+│               │   │   │   ├── example.rb
+│               │   │   │   ├── example_filesystem.rb
+│               │   │   │   ├── example_recursive.rb
+│               │   │   │   ├── gtk_ruby_zip.rb
+│               │   │   │   ├── qtzip.rb
+│               │   │   │   ├── write_simple.rb
+│               │   │   │   └── zipfind.rb
+│               │   │   └── test
+│               │   │       ├── basic_zip_file_test.rb
+│               │   │       ├── case_sensitivity_test.rb
+│               │   │       ├── central_directory_entry_test.rb
+│               │   │       ├── central_directory_test.rb
+│               │   │       ├── crypto
+│               │   │       │   ├── null_encryption_test.rb
+│               │   │       │   └── traditional_encryption_test.rb
+│               │   │       ├── data
+│               │   │       │   ├── WarnInvalidDate.zip
+│               │   │       │   ├── file1.txt
+│               │   │       │   ├── file1.txt.deflatedData
+│               │   │       │   ├── file2.txt
+│               │   │       │   ├── globTest
+│               │   │       │   │   ├── foo
+│               │   │       │   │   │   └── bar
+│               │   │       │   │   │       └── baz
+│               │   │       │   │   │           └── foo.txt
+│               │   │       │   │   ├── foo.txt
+│               │   │       │   │   └── food.txt
+│               │   │       │   ├── globTest.zip
+│               │   │       │   ├── mimetype
+│               │   │       │   ├── notzippedruby.rb
+│               │   │       │   ├── ntfs.zip
+│               │   │       │   ├── oddExtraField.zip
+│               │   │       │   ├── rubycode.zip
+│               │   │       │   ├── rubycode2.zip
+│               │   │       │   ├── test.xls
+│               │   │       │   ├── testDirectory.bin
+│               │   │       │   ├── zip64-sample.zip
+│               │   │       │   ├── zipWithDirs.zip
+│               │   │       │   └── zipWithEncryption.zip
+│               │   │       ├── deflater_test.rb
+│               │   │       ├── encryption_test.rb
+│               │   │       ├── entry_set_test.rb
+│               │   │       ├── entry_test.rb
+│               │   │       ├── errors_test.rb
+│               │   │       ├── extra_field_test.rb
+│               │   │       ├── file_extract_directory_test.rb
+│               │   │       ├── file_extract_test.rb
+│               │   │       ├── file_permissions_test.rb
+│               │   │       ├── file_split_test.rb
+│               │   │       ├── file_test.rb
+│               │   │       ├── filesystem
+│               │   │       │   ├── dir_iterator_test.rb
+│               │   │       │   ├── directory_test.rb
+│               │   │       │   ├── file_mutating_test.rb
+│               │   │       │   ├── file_nonmutating_test.rb
+│               │   │       │   └── file_stat_test.rb
+│               │   │       ├── gentestfiles.rb
+│               │   │       ├── inflater_test.rb
+│               │   │       ├── input_stream_test.rb
+│               │   │       ├── ioextras
+│               │   │       │   ├── abstract_input_stream_test.rb
+│               │   │       │   ├── abstract_output_stream_test.rb
+│               │   │       │   └── fake_io_test.rb
+│               │   │       ├── local_entry_test.rb
+│               │   │       ├── output_stream_test.rb
+│               │   │       ├── pass_thru_compressor_test.rb
+│               │   │       ├── pass_thru_decompressor_test.rb
+│               │   │       ├── samples
+│               │   │       │   └── example_recursive_test.rb
+│               │   │       ├── settings_test.rb
+│               │   │       ├── test_helper.rb
+│               │   │       ├── unicode_file_names_and_comments_test.rb
+│               │   │       ├── zip64_full_test.rb
+│               │   │       └── zip64_support_test.rb
+│               │   ├── sinatra-2.0.0
+│               │   │   ├── AUTHORS.md
+│               │   │   ├── CHANGELOG.md
+│               │   │   ├── CONTRIBUTING.md
+│               │   │   ├── Gemfile
+│               │   │   ├── LICENSE
+│               │   │   ├── MAINTENANCE.md
+│               │   │   ├── README.de.md
+│               │   │   ├── README.es.md
+│               │   │   ├── README.fr.md
+│               │   │   ├── README.hu.md
+│               │   │   ├── README.ja.md
+│               │   │   ├── README.ko.md
+│               │   │   ├── README.md
+│               │   │   ├── README.pt-br.md
+│               │   │   ├── README.pt-pt.md
+│               │   │   ├── README.ru.md
+│               │   │   ├── README.zh.md
+│               │   │   ├── Rakefile
+│               │   │   ├── SECURITY.md
+│               │   │   ├── examples
+│               │   │   │   ├── chat.rb
+│               │   │   │   ├── simple.rb
+│               │   │   │   └── stream.ru
+│               │   │   ├── lib
+│               │   │   │   ├── sinatra
+│               │   │   │   │   ├── base.rb
+│               │   │   │   │   ├── images
+│               │   │   │   │   │   ├── 404.png
+│               │   │   │   │   │   └── 500.png
+│               │   │   │   │   ├── indifferent_hash.rb
+│               │   │   │   │   ├── main.rb
+│               │   │   │   │   ├── show_exceptions.rb
+│               │   │   │   │   └── version.rb
+│               │   │   │   └── sinatra.rb
+│               │   │   └── sinatra.gemspec
+│               │   ├── sqlite3-1.3.13
+│               │   │   ├── API_CHANGES.rdoc
+│               │   │   ├── CHANGELOG.rdoc
+│               │   │   ├── ChangeLog.cvs
+│               │   │   ├── Gemfile
+│               │   │   ├── LICENSE
+│               │   │   ├── Manifest.txt
+│               │   │   ├── README.rdoc
+│               │   │   ├── Rakefile
+│               │   │   ├── ext
+│               │   │   │   └── sqlite3
+│               │   │   │       ├── Makefile
+│               │   │   │       ├── backup.c
+│               │   │   │       ├── backup.h
+│               │   │   │       ├── backup.o
+│               │   │   │       ├── database.c
+│               │   │   │       ├── database.h
+│               │   │   │       ├── database.o
+│               │   │   │       ├── exception.c
+│               │   │   │       ├── exception.h
+│               │   │   │       ├── exception.o
+│               │   │   │       ├── extconf.rb
+│               │   │   │       ├── sqlite3.c
+│               │   │   │       ├── sqlite3.o
+│               │   │   │       ├── sqlite3_native.so
+│               │   │   │       ├── sqlite3_ruby.h
+│               │   │   │       ├── statement.c
+│               │   │   │       ├── statement.h
+│               │   │   │       └── statement.o
+│               │   │   ├── faq
+│               │   │   │   ├── faq.rb
+│               │   │   │   └── faq.yml
+│               │   │   ├── lib
+│               │   │   │   ├── sqlite3
+│               │   │   │   │   ├── constants.rb
+│               │   │   │   │   ├── database.rb
+│               │   │   │   │   ├── errors.rb
+│               │   │   │   │   ├── pragmas.rb
+│               │   │   │   │   ├── resultset.rb
+│               │   │   │   │   ├── sqlite3_native.so
+│               │   │   │   │   ├── statement.rb
+│               │   │   │   │   ├── translator.rb
+│               │   │   │   │   ├── value.rb
+│               │   │   │   │   └── version.rb
+│               │   │   │   └── sqlite3.rb
+│               │   │   ├── setup.rb
+│               │   │   ├── tasks
+│               │   │   │   ├── faq.rake
+│               │   │   │   ├── gem.rake
+│               │   │   │   ├── native.rake
+│               │   │   │   └── vendor_sqlite3.rake
+│               │   │   └── test
+│               │   │       ├── helper.rb
+│               │   │       ├── test_backup.rb
+│               │   │       ├── test_collation.rb
+│               │   │       ├── test_database.rb
+│               │   │       ├── test_database_readonly.rb
+│               │   │       ├── test_deprecated.rb
+│               │   │       ├── test_encoding.rb
+│               │   │       ├── test_integration.rb
+│               │   │       ├── test_integration_open_close.rb
+│               │   │       ├── test_integration_pending.rb
+│               │   │       ├── test_integration_resultset.rb
+│               │   │       ├── test_integration_statement.rb
+│               │   │       ├── test_result_set.rb
+│               │   │       ├── test_sqlite3.rb
+│               │   │       ├── test_statement.rb
+│               │   │       └── test_statement_execute.rb
+│               │   ├── thread_safe-0.3.6
+│               │   │   ├── Gemfile
+│               │   │   ├── LICENSE
+│               │   │   ├── README.md
+│               │   │   ├── Rakefile
+│               │   │   ├── examples
+│               │   │   │   └── bench_cache.rb
+│               │   │   ├── ext
+│               │   │   │   ├── org
+│               │   │   │   │   └── jruby
+│               │   │   │   │       └── ext
+│               │   │   │   │           └── thread_safe
+│               │   │   │   │               ├── JRubyCacheBackendLibrary.java
+│               │   │   │   │               ├── jsr166e
+│               │   │   │   │               │   ├── ConcurrentHashMap.java
+│               │   │   │   │               │   ├── ConcurrentHashMapV8.java
+│               │   │   │   │               │   ├── LongAdder.java
+│               │   │   │   │               │   ├── Striped64.java
+│               │   │   │   │               │   └── nounsafe
+│               │   │   │   │               │       ├── ConcurrentHashMapV8.java
+│               │   │   │   │               │       ├── LongAdder.java
+│               │   │   │   │               │       └── Striped64.java
+│               │   │   │   │               └── jsr166y
+│               │   │   │   │                   └── ThreadLocalRandom.java
+│               │   │   │   └── thread_safe
+│               │   │   │       └── JrubyCacheBackendService.java
+│               │   │   ├── lib
+│               │   │   │   ├── thread_safe
+│               │   │   │   │   ├── atomic_reference_cache_backend.rb
+│               │   │   │   │   ├── cache.rb
+│               │   │   │   │   ├── mri_cache_backend.rb
+│               │   │   │   │   ├── non_concurrent_cache_backend.rb
+│               │   │   │   │   ├── synchronized_cache_backend.rb
+│               │   │   │   │   ├── synchronized_delegator.rb
+│               │   │   │   │   ├── util
+│               │   │   │   │   │   ├── adder.rb
+│               │   │   │   │   │   ├── atomic_reference.rb
+│               │   │   │   │   │   ├── cheap_lockable.rb
+│               │   │   │   │   │   ├── power_of_two_tuple.rb
+│               │   │   │   │   │   ├── striped64.rb
+│               │   │   │   │   │   ├── volatile.rb
+│               │   │   │   │   │   ├── volatile_tuple.rb
+│               │   │   │   │   │   └── xor_shift_random.rb
+│               │   │   │   │   ├── util.rb
+│               │   │   │   │   └── version.rb
+│               │   │   │   └── thread_safe.rb
+│               │   │   ├── spec
+│               │   │   │   ├── spec_helper.rb
+│               │   │   │   ├── src
+│               │   │   │   │   └── thread_safe
+│               │   │   │   │       └── SecurityManager.java
+│               │   │   │   ├── support
+│               │   │   │   │   ├── threads.rb
+│               │   │   │   │   └── threadsafe_test.rb
+│               │   │   │   └── thread_safe
+│               │   │   │       ├── array_spec.rb
+│               │   │   │       ├── cache_loops_spec.rb
+│               │   │   │       ├── cache_spec.rb
+│               │   │   │       ├── hash_spec.rb
+│               │   │   │       ├── no_unsafe_spec.rb
+│               │   │   │       └── synchronized_delegator_spec.rb
+│               │   │   ├── tasks
+│               │   │   │   └── update_doc.rake
+│               │   │   ├── thread_safe.gemspec
+│               │   │   └── yard-template
+│               │   │       └── default
+│               │   │           ├── fulldoc
+│               │   │           │   └── html
+│               │   │           │       └── css
+│               │   │           │           └── common.css
+│               │   │           └── layout
+│               │   │               └── html
+│               │   │                   └── footer.erb
+│               │   ├── tilt-2.0.8
+│               │   │   ├── CHANGELOG.md
+│               │   │   ├── COPYING
+│               │   │   ├── Gemfile
+│               │   │   ├── HACKING
+│               │   │   ├── README.md
+│               │   │   ├── Rakefile
+│               │   │   ├── bin
+│               │   │   │   └── tilt
+│               │   │   ├── docs
+│               │   │   │   ├── TEMPLATES.md
+│               │   │   │   └── common.css
+│               │   │   ├── lib
+│               │   │   │   ├── tilt
+│               │   │   │   │   ├── asciidoc.rb
+│               │   │   │   │   ├── babel.rb
+│               │   │   │   │   ├── bluecloth.rb
+│               │   │   │   │   ├── builder.rb
+│               │   │   │   │   ├── coffee.rb
+│               │   │   │   │   ├── commonmarker.rb
+│               │   │   │   │   ├── creole.rb
+│               │   │   │   │   ├── csv.rb
+│               │   │   │   │   ├── dummy.rb
+│               │   │   │   │   ├── erb.rb
+│               │   │   │   │   ├── erubi.rb
+│               │   │   │   │   ├── erubis.rb
+│               │   │   │   │   ├── etanni.rb
+│               │   │   │   │   ├── haml.rb
+│               │   │   │   │   ├── kramdown.rb
+│               │   │   │   │   ├── less.rb
+│               │   │   │   │   ├── liquid.rb
+│               │   │   │   │   ├── livescript.rb
+│               │   │   │   │   ├── mapping.rb
+│               │   │   │   │   ├── markaby.rb
+│               │   │   │   │   ├── maruku.rb
+│               │   │   │   │   ├── nokogiri.rb
+│               │   │   │   │   ├── pandoc.rb
+│               │   │   │   │   ├── plain.rb
+│               │   │   │   │   ├── prawn.rb
+│               │   │   │   │   ├── radius.rb
+│               │   │   │   │   ├── rdiscount.rb
+│               │   │   │   │   ├── rdoc.rb
+│               │   │   │   │   ├── redcarpet.rb
+│               │   │   │   │   ├── redcloth.rb
+│               │   │   │   │   ├── rst-pandoc.rb
+│               │   │   │   │   ├── sass.rb
+│               │   │   │   │   ├── sigil.rb
+│               │   │   │   │   ├── string.rb
+│               │   │   │   │   ├── template.rb
+│               │   │   │   │   ├── typescript.rb
+│               │   │   │   │   ├── wikicloth.rb
+│               │   │   │   │   └── yajl.rb
+│               │   │   │   └── tilt.rb
+│               │   │   ├── man
+│               │   │   │   ├── index.txt
+│               │   │   │   └── tilt.1.ronn
+│               │   │   ├── test
+│               │   │   │   ├── markaby
+│               │   │   │   │   ├── locals.mab
+│               │   │   │   │   ├── markaby.mab
+│               │   │   │   │   ├── markaby_other_static.mab
+│               │   │   │   │   ├── render_twice.mab
+│               │   │   │   │   ├── scope.mab
+│               │   │   │   │   └── yielding.mab
+│               │   │   │   ├── mytemplate.rb
+│               │   │   │   ├── test_helper.rb
+│               │   │   │   ├── tilt_asciidoctor_test.rb
+│               │   │   │   ├── tilt_babeltemplate.rb
+│               │   │   │   ├── tilt_blueclothtemplate_test.rb
+│               │   │   │   ├── tilt_buildertemplate_test.rb
+│               │   │   │   ├── tilt_cache_test.rb
+│               │   │   │   ├── tilt_coffeescripttemplate_test.rb
+│               │   │   │   ├── tilt_commonmarkertemplate_test.rb
+│               │   │   │   ├── tilt_compilesite_test.rb
+│               │   │   │   ├── tilt_creoletemplate_test.rb
+│               │   │   │   ├── tilt_csv_test.rb
+│               │   │   │   ├── tilt_erbtemplate_test.rb
+│               │   │   │   ├── tilt_erubistemplate_test.rb
+│               │   │   │   ├── tilt_erubitemplate_test.rb
+│               │   │   │   ├── tilt_etannitemplate_test.rb
+│               │   │   │   ├── tilt_hamltemplate_test.rb
+│               │   │   │   ├── tilt_kramdown_test.rb
+│               │   │   │   ├── tilt_lesstemplate_test.less
+│               │   │   │   ├── tilt_lesstemplate_test.rb
+│               │   │   │   ├── tilt_liquidtemplate_test.rb
+│               │   │   │   ├── tilt_livescripttemplate_test.rb
+│               │   │   │   ├── tilt_mapping_test.rb
+│               │   │   │   ├── tilt_markaby_test.rb
+│               │   │   │   ├── tilt_markdown_test.rb
+│               │   │   │   ├── tilt_marukutemplate_test.rb
+│               │   │   │   ├── tilt_metadata_test.rb
+│               │   │   │   ├── tilt_nokogiritemplate_test.rb
+│               │   │   │   ├── tilt_pandoctemplate_test.rb
+│               │   │   │   ├── tilt_prawntemplate.prawn
+│               │   │   │   ├── tilt_prawntemplate_test.rb
+│               │   │   │   ├── tilt_radiustemplate_test.rb
+│               │   │   │   ├── tilt_rdiscounttemplate_test.rb
+│               │   │   │   ├── tilt_rdoctemplate_test.rb
+│               │   │   │   ├── tilt_redcarpettemplate_test.rb
+│               │   │   │   ├── tilt_redclothtemplate_test.rb
+│               │   │   │   ├── tilt_rstpandoctemplate_test.rb
+│               │   │   │   ├── tilt_sasstemplate_test.rb
+│               │   │   │   ├── tilt_sigil_test.rb
+│               │   │   │   ├── tilt_stringtemplate_test.rb
+│               │   │   │   ├── tilt_template_test.rb
+│               │   │   │   ├── tilt_test.rb
+│               │   │   │   ├── tilt_typescript_test.rb
+│               │   │   │   ├── tilt_wikiclothtemplate_test.rb
+│               │   │   │   └── tilt_yajltemplate_test.rb
+│               │   │   └── tilt.gemspec
+│               │   └── tzinfo-1.2.4
+│               │       ├── CHANGES.md
+│               │       ├── LICENSE
+│               │       ├── README.md
+│               │       ├── Rakefile
+│               │       ├── lib
+│               │       │   ├── tzinfo
+│               │       │   │   ├── country.rb
+│               │       │   │   ├── country_index_definition.rb
+│               │       │   │   ├── country_info.rb
+│               │       │   │   ├── country_timezone.rb
+│               │       │   │   ├── data_source.rb
+│               │       │   │   ├── data_timezone.rb
+│               │       │   │   ├── data_timezone_info.rb
+│               │       │   │   ├── info_timezone.rb
+│               │       │   │   ├── linked_timezone.rb
+│               │       │   │   ├── linked_timezone_info.rb
+│               │       │   │   ├── offset_rationals.rb
+│               │       │   │   ├── ruby_core_support.rb
+│               │       │   │   ├── ruby_country_info.rb
+│               │       │   │   ├── ruby_data_source.rb
+│               │       │   │   ├── time_or_datetime.rb
+│               │       │   │   ├── timezone.rb
+│               │       │   │   ├── timezone_definition.rb
+│               │       │   │   ├── timezone_index_definition.rb
+│               │       │   │   ├── timezone_info.rb
+│               │       │   │   ├── timezone_offset.rb
+│               │       │   │   ├── timezone_period.rb
+│               │       │   │   ├── timezone_proxy.rb
+│               │       │   │   ├── timezone_transition.rb
+│               │       │   │   ├── timezone_transition_definition.rb
+│               │       │   │   ├── transition_data_timezone_info.rb
+│               │       │   │   ├── zoneinfo_country_info.rb
+│               │       │   │   ├── zoneinfo_data_source.rb
+│               │       │   │   └── zoneinfo_timezone_info.rb
+│               │       │   └── tzinfo.rb
+│               │       ├── test
+│               │       │   ├── tc_country.rb
+│               │       │   ├── tc_country_index_definition.rb
+│               │       │   ├── tc_country_info.rb
+│               │       │   ├── tc_country_timezone.rb
+│               │       │   ├── tc_data_source.rb
+│               │       │   ├── tc_data_timezone.rb
+│               │       │   ├── tc_data_timezone_info.rb
+│               │       │   ├── tc_info_timezone.rb
+│               │       │   ├── tc_linked_timezone.rb
+│               │       │   ├── tc_linked_timezone_info.rb
+│               │       │   ├── tc_offset_rationals.rb
+│               │       │   ├── tc_ruby_core_support.rb
+│               │       │   ├── tc_ruby_country_info.rb
+│               │       │   ├── tc_ruby_data_source.rb
+│               │       │   ├── tc_time_or_datetime.rb
+│               │       │   ├── tc_timezone.rb
+│               │       │   ├── tc_timezone_definition.rb
+│               │       │   ├── tc_timezone_index_definition.rb
+│               │       │   ├── tc_timezone_info.rb
+│               │       │   ├── tc_timezone_london.rb
+│               │       │   ├── tc_timezone_melbourne.rb
+│               │       │   ├── tc_timezone_new_york.rb
+│               │       │   ├── tc_timezone_offset.rb
+│               │       │   ├── tc_timezone_period.rb
+│               │       │   ├── tc_timezone_proxy.rb
+│               │       │   ├── tc_timezone_transition.rb
+│               │       │   ├── tc_timezone_transition_definition.rb
+│               │       │   ├── tc_timezone_utc.rb
+│               │       │   ├── tc_transition_data_timezone_info.rb
+│               │       │   ├── tc_zoneinfo_country_info.rb
+│               │       │   ├── tc_zoneinfo_data_source.rb
+│               │       │   ├── tc_zoneinfo_timezone_info.rb
+│               │       │   ├── test_utils.rb
+│               │       │   ├── ts_all.rb
+│               │       │   ├── ts_all_ruby.rb
+│               │       │   ├── ts_all_zoneinfo.rb
+│               │       │   ├── tzinfo-data
+│               │       │   │   └── tzinfo
+│               │       │   │       ├── data
+│               │       │   │       │   ├── definitions
+│               │       │   │       │   │   ├── America
+│               │       │   │       │   │   │   ├── Argentina
+│               │       │   │       │   │   │   │   └── Buenos_Aires.rb
+│               │       │   │       │   │   │   └── New_York.rb
+│               │       │   │       │   │   ├── Australia
+│               │       │   │       │   │   │   └── Melbourne.rb
+│               │       │   │       │   │   ├── EST.rb
+│               │       │   │       │   │   ├── Etc
+│               │       │   │       │   │   │   ├── GMT__m__1.rb
+│               │       │   │       │   │   │   ├── GMT__p__1.rb
+│               │       │   │       │   │   │   └── UTC.rb
+│               │       │   │       │   │   ├── Europe
+│               │       │   │       │   │   │   ├── Amsterdam.rb
+│               │       │   │       │   │   │   ├── Andorra.rb
+│               │       │   │       │   │   │   ├── London.rb
+│               │       │   │       │   │   │   ├── Paris.rb
+│               │       │   │       │   │   │   └── Prague.rb
+│               │       │   │       │   │   └── UTC.rb
+│               │       │   │       │   ├── indexes
+│               │       │   │       │   │   ├── countries.rb
+│               │       │   │       │   │   └── timezones.rb
+│               │       │   │       │   └── version.rb
+│               │       │   │       └── data.rb
+│               │       │   └── zoneinfo
+│               │       │       ├── America
+│               │       │       │   ├── Argentina
+│               │       │       │   │   └── Buenos_Aires
+│               │       │       │   └── New_York
+│               │       │       ├── Australia
+│               │       │       │   └── Melbourne
+│               │       │       ├── EST
+│               │       │       ├── Etc
+│               │       │       │   └── UTC
+│               │       │       ├── Europe
+│               │       │       │   ├── Amsterdam
+│               │       │       │   ├── Andorra
+│               │       │       │   ├── London
+│               │       │       │   ├── Paris
+│               │       │       │   └── Prague
+│               │       │       ├── Factory
+│               │       │       ├── iso3166.tab
+│               │       │       ├── leapseconds
+│               │       │       ├── posix
+│               │       │       │   └── Europe
+│               │       │       │       └── London
+│               │       │       ├── posixrules
+│               │       │       ├── right
+│               │       │       │   └── Europe
+│               │       │       │       └── London
+│               │       │       ├── zone.tab
+│               │       │       └── zone1970.tab
+│               │       └── tzinfo.gemspec
+│               └── specifications
+│                   ├── activemodel-5.1.4.gemspec
+│                   ├── activerecord-5.1.4.gemspec
+│                   ├── activesupport-5.1.4.gemspec
+│                   ├── arel-8.0.0.gemspec
+│                   ├── concurrent-ruby-1.0.5.gemspec
+│                   ├── i18n-0.9.3.gemspec
+│                   ├── minitest-5.11.1.gemspec
+│                   ├── mustermann-1.0.1.gemspec
+│                   ├── rack-2.0.3.gemspec
+│                   ├── rack-protection-2.0.0.gemspec
+│                   ├── rubyzip-1.2.1.gemspec
+│                   ├── sinatra-2.0.0.gemspec
+│                   ├── sqlite3-1.3.13.gemspec
+│                   ├── thread_safe-0.3.6.gemspec
+│                   ├── tilt-2.0.8.gemspec
+│                   └── tzinfo-1.2.4.gemspec
+├── views
+│   ├── download.erb
+│   ├── download.erb~
+│   ├── index.erb
+│   ├── index.erb~
+│   ├── loginscr.erb
+│   ├── loginscr.erb~
+│   ├── logout.erb
+│   ├── logout.erb~
+│   ├── redisterscr.erb~
+│   ├── registerscr.erb
+│   ├── registerscr.erb~
+│   ├── search.erb
+│   ├── search.erb~
+│   ├── signed.erb
+│   ├── signed.erb~
+│   ├── temp.erb
+│   ├── upload.erb
+│   └── upload.erb~
+└── zipsearch.rb~
+
+301 directories, 1678 files

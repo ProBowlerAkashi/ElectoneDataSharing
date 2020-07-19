@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8" />
+    <title>RegistShare</title>
+  </head>	
+
+  <body>
+    <Div align="right">
+       <a href="/">Mainpage</a> | <a href="/logout">Log out</a> | <a href="/upload">File Upload</a>
+
+    </Div>
+    <Div align="center">
+      <h1>Download</h1>
+      Filename ... <%= @a.name %><br>
+      Auther ... <%= @a.auther %><br>
+      <a href="/files/DL_<%= @a.name %>.zip"> DOWNLOAD </a>
+    </Div>
+  </body>
+</html>

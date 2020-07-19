@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8" />
+    <title>RegistShare</title>
+  </head>	
+  <body>
+    <Div align="right">
+      Welcome! <%= session[:userid] %> <a href="/logout">Log out</a> | <a href="/upload">File Upload</a>
+      
+    </Div>
+    <Div align="center">
+      <h1>Welcome to RegistShare</h1><br>
+      <form method="post" action="/search">
+	<input type="text" name="str">
+	<input type="submit" name="search" value="search">
+      </form>
+      Ratest 20 datas<br>
+    </Div>
+    <Div align="center">
+      <table border>
+	<tr>
+	  <td>Filename</td>
+	  <td>Auther</td>
+	  <td>DL</td>
+	</tr>
+	<% @image.each do |b| %>
+	<tr>
+	  <td><%= b.name %></td>
+	  <td><%= b.auther %></td>
+	  <form method="post" action="/download">
+	    <td><input type="submit" name="download" value="download"></td>
+	    <input type="hidden" name="fileid" value="<%= b.id %>">
+	  </form>
+	</tr>
+	<% end %>
+      </table>
+      Download History<br>
+      <table border>
+	<tr>
+	  <td>Filename</td>
+	  <td>Auther</td>
+	  <td>Retry DL</td>
+	</tr>
+	<% if @log != nil %>
+	<% @log.each do |c| %>
+	<tr>
+	  <td><%= c.name %></td>
+	  <td><%= c.auther %></td>
+	  <form method="post" action="/download">
+	    <input type="hidden" name="fileid" value="<%= c.id %>">
+	    <td><input type="submit" name="download" value="download"></td>
+	  </form>
+	</tr>
+	<% end %>
+	<% end %>
+      </table>
+
+    </DIv>
+  </body>
+</html>

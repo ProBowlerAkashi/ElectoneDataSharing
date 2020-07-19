@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8" />
+    <title>RegistShare</title>
+  </head>	
+
+  <body>
+    <Div align="right">
+      Welcome! <a href="/logout">Log in</a>
+    </Div>
+    <Div align="center">
+
+      <h1>Sign up</h1>
+      <% if session[:userexist] == true %>
+      <font color="red">This User ID was already used.<br>Please try another one.</font>
+      <% end %>
+      <table border>
+	<form method="post" action="/signup">
+	  <tr><td>New Username:<input type="text" name="nuser"></td></tr>
+	  <tr><td>New Password:<input type="password" name="npass"></td></tr>
+	  <tr><td><input type="submit" name="Submit" value="register"></td></tr>
+	</form>
+      </table>
+    </Div>
+  </body>
+</html>

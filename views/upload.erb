@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8" />
+    <title>RegistShare</title>
+  </head>	
+
+  <body>
+    <Div align="right">
+      <a href="/logout">Log out</a> | <a href="/">Mainpage</a>
+
+    </Div>
+
+    <Div align="center">
+      <h1>Upload regist data</h1>
+      <% if session[:fileexist] == true %>
+        <font color="red">File already exist or no input for Songname.<br> Please change name.</font>
+      <% end %>
+      <% if session[:uploaderr] == true %>
+        <font color="red">Upload Failed.<br>Please input all text and files.</font>
+      <% end %>
+      <% if session[:wrongfile] == true %>
+        <font color="red">Upload Failed.<br>Please input correct files.</font>
+      <% end %>
+      <table>
+	<form action = "/execupload" method = "post" enctype = "multipart/form-data">
+	  <tr>
+	    <td>Songname:<input type = "text" name = "filename"></td>
+	  </tr>
+	  <tr>
+	    <td>.B00 file:<input type = "file" name = "b00file"></td>
+	  </tr>
+	  <tr>
+	    <td>.NAM file:<input type = "file" name = "namfile"></td>
+	  </tr>
+	  <tr>
+	    <td><input type = "submit" name = "submit"></td>
+	  </tr>
+	</form>
+    </Div>
+  </body>
+</html>
